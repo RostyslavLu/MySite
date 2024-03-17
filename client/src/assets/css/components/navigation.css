@@ -1,0 +1,46 @@
+[id="main-navigation"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    padding: 0 200px;
+}
+.main-navigation-links {
+    margin-left: auto;
+}
+.main-navigation-links, .main-navigation-static{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.main-navigation-links > a, .main-navigation-static > a {
+    color: var(--main-color-light);
+    font-size: var(--text-xxs);
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    transition: text-decoration 350ms ease-in-out;
+}
+
+.main-navigation-links > a:hover {
+    text-decoration: underline var(--main-color-light);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.main-navigation-links > a.router-link-exact-active {
+    color: var(--accent-color-light);
+}
+
+.main-nav-enter-active,
+.main-nav-leave-active {
+    transition: opacity 450ms ease-in-out;
+}
+.main-nav-enter-from,
+.main-nav-leave-to {
+    opacity: 0;
+}

@@ -23,7 +23,9 @@ app.post('/send-mail', (req, res) => {
         to: process.env.MAIL_USERNAME,
         cc: email,
         subject: `Message from ${name}`,
-        text: `${message}, ${email}`
+        text: `Message from ${name} ${email}`,
+        html: `<p>Message from ${name} ${email}:</p>
+            <p>${message}</p>`
     }
     console.log(emailOptions)
     emailService.sendEmail(emailOptions)

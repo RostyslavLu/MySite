@@ -27,7 +27,6 @@ app.post('/send-mail', (req, res) => {
         html: `<p>Message from ${name} ${email}:</p>
             <p>${message}</p>`
     }
-    console.log(emailOptions)
     emailService.sendEmail(emailOptions)
 
     res.json({ message: 'Email sent' })

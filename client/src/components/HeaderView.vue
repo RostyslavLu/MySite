@@ -26,7 +26,6 @@ onMounted(() => {
       <img src="@/assets/img/photos/img-laptop.jpg" alt="Laptop" />
       <div>
         <h1>My Portfolio</h1>
-        <!-- <p>My name is Rostyslav Luchyshyn and I'm a web developer</p> -->
         <p class="fade-in-text">M{{ animatedText }}</p>
       </div>
     </header>

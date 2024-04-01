@@ -1,4 +1,5 @@
 <script setup>
+import FooterView from '@/components/FooterView.vue'
 import InputText from '@/components/InputText.vue'
 import Textarea from '@/components/Textarea.vue'
 import Label from '@/components/Label.vue'
@@ -139,4 +140,5 @@ const triggerShake = (e) => {
       </form>
     </Transition>
   </main>
+  <FooterView />
 </template>

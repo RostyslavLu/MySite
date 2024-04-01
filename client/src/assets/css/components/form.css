@@ -22,7 +22,7 @@ form {
 
 .form-group input, .form-group textarea {
     border: 1px solid var(--main-color-light);
-    border-radius: 4px;
+    border-radius: var(--space-xs);
     margin-top: var(--space-xs);
     padding: var(--space-s);
     min-height: 40px;

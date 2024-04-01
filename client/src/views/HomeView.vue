@@ -1,5 +1,6 @@
 <script setup>
 import HeaderView from '@/components/HeaderView.vue'
+import FooterView from '@/components/FooterView.vue'
 
 </script>
 
@@ -7,4 +8,5 @@ import HeaderView from '@/components/HeaderView.vue'
   <main>
     <HeaderView />
   </main>
+  <FooterView />
 </template>

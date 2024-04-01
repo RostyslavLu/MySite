@@ -24,7 +24,7 @@ onMounted(() => {
   <Transition name="fade" appear>
     <header class="main-header">
       <img src="@/assets/img/photos/img-laptop.jpg" alt="Laptop" />
-      <div>
+      <div class="main-header-text">
         <h1>My Portfolio</h1>
         <p class="fade-in-text">M{{ animatedText }}</p>
       </div>

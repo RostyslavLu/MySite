@@ -15,6 +15,7 @@
     "dotenv": "^16.4.5",
     "nodemailer": "^6.9.12",
     "vue": "^3.2.13",
+    "vue-i18n": "^9.9.0",
     "vue-recaptcha": "^2.0.1",
     "vue-router": "^4.0.3"
   },

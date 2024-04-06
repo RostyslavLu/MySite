@@ -2,7 +2,7 @@
 import { ref, onMounted } from 'vue'
 
 const animatedText = ref('')
-const text = 'y name is Rostyslav Luchyshyn and I\'m a web developer'
+const text = 'My name is Rostyslav Luchyshyn and I\'m a web developer'
 
 onMounted(() => {
   let i = 0
@@ -26,7 +26,7 @@ onMounted(() => {
       <img src="@/assets/img/photos/img-laptop.jpg" alt="Laptop" />
       <div class="main-header-text">
         <h1>My Portfolio</h1>
-        <p class="fade-in-text">M{{ animatedText }}</p>
+        <p class="fade-in-text">{{ animatedText }}</p>
       </div>
     </header>
   </Transition>

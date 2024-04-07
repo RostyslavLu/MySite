@@ -1,7 +1,9 @@
 <script setup>
 import { ref } from 'vue'
 import AppLogo from '@/components/AppLogo.vue'
+import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
 const toggleMenu = ref(false)
+
 </script>
 
 <template>
@@ -10,15 +12,17 @@ const toggleMenu = ref(false)
       <router-link to="/" aria-label="Home-link">
         <AppLogo />
         </router-link>
+        <LanguageSwitcher />
     </div>
     <Transition name="main-nav">
       <div v-if="toggleMenu" class="main-navigation-links">
-        <router-link to="/education">Education</router-link>
-        <router-link to="/skill">Skills</router-link>
-        <router-link to="/resume">Resume</router-link>
-        <router-link to="/contact">Contact</router-link>
+        <router-link to="/projects">{{ $t('navigation.projects') }}</router-link>
+        <router-link to="/resume">{{ $t('navigation.cv') }}</router-link>
+        <router-link to="/photogallery">{{ $t('navigation.photogallery') }}</router-link>
+        <router-link to="/contact">{{ $t('navigation.contact') }}</router-link>
       </div>
     </Transition>
+
     <button v-if="toggleMenu" @click="toggleMenu = !toggleMenu" class="toggle-button" aria-label="close menu">
       <svg id="Calque_2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 100.4 102.47">
         <g id="Calque_1-2">

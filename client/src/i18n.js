@@ -17,6 +17,20 @@ const messages = {
       en: 'English',
       fr: 'French',
       ua: 'Ukrainian'
+    },
+    contactForm: {
+      name: 'Name',
+      email: 'Email',
+      message: 'Message',
+      submit: 'Submit',
+      messageSuccess: 'Thank you for your message!',
+      placeholderName: 'ex. John Doe',
+      placeholderEmail: 'ex. john@example.com',
+      placeholderMessage: 'Write your message here',
+      requiredName: 'Name is required',
+      requiredEmail: 'Email is required',
+      requiredMessage: 'Message is required',
+      requiredSymolsEmail: 'Email must have "@" and "."'
     }
   },
   fr: {
@@ -35,6 +49,20 @@ const messages = {
       en: 'Anglais',
       fr: 'Français',
       ua: 'Ukrainien'
+    },
+    contactForm: {
+      name: 'Nom',
+      email: 'Courriel',
+      message: 'Message',
+      submit: 'Envoyer',
+      messageSuccess: 'Merci pour votre message!',
+      placeholderName: 'ex. Jean Dupont',
+      placeholderEmail: 'ex. jean@example.com',
+      placeholderMessage: 'Écrivez votre message ici',
+      requiredName: 'Nom est requis',
+      requiredEmail: 'Courriel est requis',
+      requiredMessage: 'Message est requis',
+      requiredSymolsEmail: 'Courriel doit avoir "@" et "."'
     }
   },
   ua: {
@@ -53,6 +81,20 @@ const messages = {
       en: 'Англійська',
       fr: 'Французька',
       ua: 'Українська'
+    },
+    contactForm: {
+      name: 'Ім\'я',
+      email: 'Електронна пошта',
+      message: 'Повідомлення',
+      submit: 'Надіслати',
+      messageSuccess: 'Дякую за ваше повідомлення!',
+      placeholderName: 'напр. Іван Мороз',
+      placeholderEmail: 'напр. ivan@example.com',
+      placeholderMessage: 'Напишіть ваше повідомлення тут',
+      requiredName: 'Ім\'я обов\'язкове',
+      requiredEmail: 'Електронна пошта обов\'язкова',
+      requiredMessage: 'Повідомлення обов\'язкове',
+      requiredSymolsEmail: 'Електронна пошта повинна містити "@" та "."'
     }
   }
 }

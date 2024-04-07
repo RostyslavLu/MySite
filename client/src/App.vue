@@ -22,7 +22,6 @@ const toggleMenu = ref(false)
         <router-link to="/contact">{{ $t('navigation.contact') }}</router-link>
       </div>
     </Transition>
-
     <button v-if="toggleMenu" @click="toggleMenu = !toggleMenu" class="toggle-button" aria-label="close menu">
       <svg id="Calque_2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 100.4 102.47">
         <g id="Calque_1-2">

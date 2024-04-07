@@ -5,10 +5,11 @@ import Textarea from '@/components/Textarea.vue'
 import Label from '@/components/Label.vue'
 import InputError from '@/components/InputError.vue'
 import EmailDataService from '@/services/EmailDataService'
+import { useI18n } from 'vue-i18n'
 import { ref } from 'vue'
 
 const sent = ref(false)
-
+const { t } = useI18n()
 const form = ref({
   name: '',
   email: '',
@@ -25,19 +26,19 @@ const onSubmit = (e) => {
   e.preventDefault()
   if (form.value.name === '' || form.value.email === '' || form.value.message === '' || form.value.email.indexOf('@') === -1 || form.value.email.indexOf('.') === -1) {
     if (form.value.name === '') {
-      errors.value.name = 'Name is required'
+      errors.value.name = t('contactForm.requiredName')
     } else {
       errors.value.name = ''
     }
     if (form.value.email === '') {
-      errors.value.email = 'Email is required'
+      errors.value.email = t('contactForm.requiredEmail')
     } else if (form.value.email.indexOf('@') === -1 || form.value.email.indexOf('.') === -1) {
-      errors.value.email = 'Email must have "@" and "."'
+      errors.value.email = t('contactForm.requiredSymolsEmail')
     } else {
       errors.value.email = ''
     }
     if (form.value.message === '') {
-      errors.value.message = 'Message is required'
+      errors.value.message = t('contactForm.requiredMessage')
     } else {
       errors.value.message = ''
     }
@@ -80,36 +81,36 @@ const triggerShake = (e) => {
   <main>
     <Transition name="message">
       <div v-if="sent" class="form-message">
-        <p>Thank you for your message!</p>
+        <p>{{ $t('contactForm.messageSuccess') }}</p>
       </div>
     </Transition>
     <Transition name="form">
       <form v-if="!sent" class="contact-form" @submit="onSubmit">
         <div class="form-group">
           <div class="input-label">
-            <Label for="name" label="Name" />
+            <Label for="name" :label="$t('contactForm.name')" />
             <InputError :message="errors.name" />
           </div>
           <InputText id="name" type="text" v-model="form.name" name="name" autocomplete="name"
-            placeholder="ex. John Doe" />
+          :placeholder="$t('contactForm.placeholderName')" />
         </div>
         <div class="form-group">
           <div class="input-label">
-            <Label for="email" label="Email" />
+            <Label for="email" :label="$t('contactForm.email')" />
             <InputError :message="errors.email" />
           </div>
           <InputText id="email" type="text" v-model="form.email" name="email" autocomplete="email"
-            placeholder="ex. john@example.com" />
+          :placeholder="$t('contactForm.placeholderEmail')" />
         </div>
         <div class="form-group">
           <div class="input-label">
-            <Label for="message" label="Message" />
+            <Label for="message" :label="$t('contactForm.message')" />
             <InputError :message="errors.message" />
           </div>
-          <Textarea id="message" v-model="form.message" name="message" placeholder="Write your message here"
+          <Textarea id="message" v-model="form.message" name="message" :placeholder="$t('contactForm.placeholderMessage')"
             rows="15" />
         </div>
-        <button class="button-send" type="submit">Send</button>
+        <button class="button-send" type="submit">{{ $t('contactForm.submit') }}</button>
       </form>
     </Transition>
   </main>

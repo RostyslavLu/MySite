@@ -18,7 +18,6 @@
 
 .main-header > div {
   position: relative;
-  padding: var(--space-s);
   text-align: left;
 }
 

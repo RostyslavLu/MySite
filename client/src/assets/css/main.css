@@ -2,6 +2,7 @@
 @import url('variables/typography.css');
 @import url('variables/colors.css');
 @import url('variables/spacing.css');
+@import url('variables/dimensions.css');
 
 /* reset */
 @import url('reset/reset.css');
@@ -16,3 +17,4 @@
 @import url('components/form.css');
 @import url('components/contact.css');
 @import url('components/footer.css');
+@import url('components/dropdown.css');

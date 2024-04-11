@@ -19,9 +19,11 @@ const messages = {
       ua: 'Ukrainian'
     },
     contactForm: {
-      name: 'Name',
-      email: 'Email',
-      message: 'Message',
+      title: 'Contact',
+      subtitle: 'Send me a message',
+      name: 'Your name',
+      email: 'Your email',
+      message: 'Your message',
       submit: 'Submit',
       messageSuccess: 'Thank you for your message!',
       placeholderName: 'ex. John Doe',
@@ -51,9 +53,11 @@ const messages = {
       ua: 'Ukrainien'
     },
     contactForm: {
-      name: 'Nom',
-      email: 'Courriel',
-      message: 'Message',
+      title: 'Contact',
+      subtitle: 'Envoyez-moi un message',
+      name: 'Votre nom',
+      email: 'Votre courriel',
+      message: 'Votre message',
       submit: 'Envoyer',
       messageSuccess: 'Merci pour votre message!',
       placeholderName: 'ex. Jean Dupont',
@@ -83,9 +87,11 @@ const messages = {
       ua: 'Українська'
     },
     contactForm: {
-      name: 'Ім\'я',
-      email: 'Електронна пошта',
-      message: 'Повідомлення',
+      title: 'Контакти',
+      subtitle: 'Надішліть мені повідомлення',
+      name: 'Ваше ім\'я',
+      email: 'Ваша електронна пошта',
+      message: 'Ваше повідомлення',
       submit: 'Надіслати',
       messageSuccess: 'Дякую за ваше повідомлення!',
       placeholderName: 'напр. Іван Мороз',

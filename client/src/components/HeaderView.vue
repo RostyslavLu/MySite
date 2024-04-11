@@ -17,7 +17,7 @@ const updateAnimatedText = () => {
     } else {
       clearInterval(interval)
     }
-  }, 70)
+  }, 30)
 }
 
 onMounted(() => {
@@ -34,7 +34,7 @@ watch(() => i18n.global.locale.value, () => {
 <template>
   <Transition name="fade" appear>
     <header class="main-header">
-      <img src="@/assets/img/photos/img-laptop.jpg" alt="Laptop" />
+      <img src="@/assets/img/photos/img-laptop.jpg" alt="Laptop" loading="lazy"/>
       <div class="main-header-text">
         <h1>{{ t('message.title') }}</h1>
         <p class="fade-in-text">{{ animatedText }}&nbsp;</p>

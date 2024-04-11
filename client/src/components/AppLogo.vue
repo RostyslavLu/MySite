@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <svg id="Calque_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 209 209" width="32">
+  <svg id="Calque_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 209 209" width="36">
     <g id="Calque_1-2">
       <rect x="4.5" y="4.5" width="200" height="200"
         style="fill:#000; stroke:#fff; stroke-miterlimit:10; stroke-width:9px;" />

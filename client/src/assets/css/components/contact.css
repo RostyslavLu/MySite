@@ -6,7 +6,16 @@
   transform: scale3d(0.8, 0.8, 0.8);
 }
 
+.contact-social {
+  padding: 0 350px;
+}
+
 .input-error {
   color: var(--secondary-color-light);
   font-size: var(--text-xxs);
+}
+.contact-title {
+  font-size: var(--text-xl);
+  text-align: left;
+  margin-bottom: var(--space-lg);
 }

@@ -19,7 +19,9 @@
 
 .main-navigation-links > a, .main-navigation-static > a {
     color: var(--main-color-light);
-    font-size: var(--text-xs);
+    font-family: var(--secondary-font);
+    font-size: var(--text-xxs);
+    font-weight: 500;
     text-decoration: underline transparent;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
@@ -36,11 +38,11 @@
     color: var(--accent-color-light);
 }
 
-.main-nav-enter-active,
+/* .main-nav-enter-active,
 .main-nav-leave-active {
     transition: opacity 450ms ease-in-out;
 }
 .main-nav-enter-from,
 .main-nav-leave-to {
     opacity: 0;
-}
+} */

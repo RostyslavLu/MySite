@@ -24,7 +24,7 @@ const routes = [
   },
   {
     path: '/resume',
-    name: 'CV',
+    name: 'About me',
     component: ResumeView
   },
   {

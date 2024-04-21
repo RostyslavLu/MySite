@@ -8,7 +8,7 @@ const messages = {
     },
     navigation: {
       home: 'Home',
-      cv: 'CV',
+      cv: 'About',
       projects: 'Projects',
       photogallery: 'Photo Gallery',
       contact: 'Contact'
@@ -42,7 +42,7 @@ const messages = {
     },
     navigation: {
       home: 'Accueil',
-      cv: 'CV',
+      cv: 'À propos',
       projects: 'Projets',
       photogallery: 'Galerie de photos',
       contact: 'Contact'
@@ -76,7 +76,7 @@ const messages = {
     },
     navigation: {
       home: 'Головна',
-      cv: 'Резюме',
+      cv: 'Про мене',
       projects: 'Проєкти',
       photogallery: 'Фотогалерея',
       contact: 'Контакти'

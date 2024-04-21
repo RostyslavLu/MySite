@@ -33,11 +33,11 @@ const getFlagImage = (locale) => {
 <template>
   <div class="dropdown">
     <button class="dropbtn">
-      <img :src="getFlagImage(selectedLocale)" alt="Flag" height="24px" />
+      <img :src="getFlagImage(selectedLocale)" alt="Flag" width="36px" height="24px" loading="lazy" />
     </button>
     <div class="dropdown-content">
       <a v-for="locale in availableLocales" :key="locale" @click="selectedLocale = locale">
-        <img :src="getFlagImage(locale)" alt="Flag" height="24px" />
+        <img :src="getFlagImage(locale)" alt="Flag" width="36px" height="24px" loading="lazy" />
       </a>
     </div>
   </div>

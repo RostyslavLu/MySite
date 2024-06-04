@@ -1,0 +1,47 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-lg);
+  border-bottom: 2px solid var(--main-color-light);
+  padding-bottom: var(--space-lg);
+}
+
+.about-title {
+  font-size: var(--text-sm);
+  text-align: left;
+}
+
+.about-text {
+  font-size: var(--text-xxs);
+  text-align: left;
+}
+.about-content > * {
+  flex: 1;
+}
+
+.about-text > p {
+  line-height: 1.6;
+}
+
+/* experience.css */
+
+.experience-title {
+  font-size: var(--text-xxs);
+  font-weight: 700;
+  text-decoration: solid underline var(--main-color-light);
+  text-underline-offset: 5px;
+}
+.experience-container > p {
+  margin-top: var(--space-s);
+}
+.experience-task-list {
+  list-style: circle;
+  padding-left: var(--space-xl);
+  margin-top: var(--space-xs);
+}

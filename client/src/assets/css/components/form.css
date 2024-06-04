@@ -16,7 +16,7 @@ form {
 
 .form-group input, .form-group textarea {
     display: block;
-    width: 100%;
+    min-width: 100%;
 }
 
 .form-group input, .form-group textarea {

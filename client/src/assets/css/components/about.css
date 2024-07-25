@@ -31,9 +31,9 @@
 
 /* experience.css */
 
-.experience-title {
+.experience-title, .education-title {
   font-size: var(--text-xxs);
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: solid underline var(--main-color-light);
   text-underline-offset: 5px;
 }
@@ -44,4 +44,12 @@
   list-style: circle;
   padding-left: var(--space-xl);
   margin-top: var(--space-xs);
+}
+
+/* education.css */
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
 }

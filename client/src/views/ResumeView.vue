@@ -1,6 +1,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 import ExperienceList from '@/components/ExperienceList.vue'
+import EducationList from '@/components/EducationList.vue'
 
 const { t } = useI18n()
 </script>
@@ -22,7 +23,9 @@ const { t } = useI18n()
         </div>
         <div class="about-content about-education">
           <h2 class="about-title">{{ t('resume.educationTitle') }}</h2>
-          <p class="about-text">{{ t('resume.educationText') }}</p>
+          <div class="about-text">
+            <EducationList />
+          </div>
         </div>
         <div class="about-content about-skills">
           <h2 class="about-title">{{ t('resume.skillsTitle') }}</h2>

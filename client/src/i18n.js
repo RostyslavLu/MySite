@@ -40,7 +40,7 @@ const messages = {
       experienceTitle: 'Experience',
       experienceItems: [
         {
-          title: 'WEB DEVELOPER INTERN',
+          title: 'Web developer intern',
           company: 'Euro Style Design Inc',
           date: '04/2024 - 05/2024',
           taskDescription: [
@@ -53,6 +53,26 @@ const messages = {
         }
       ],
       educationTitle: 'Education',
+      educationItems: [
+        {
+          title: 'AEC in WEB site design and programming',
+          school: 'Collège de Maisonneuve, Montréal, QC, Canada',
+          date: '01/2023 - 05/2024',
+          description: 'Developed skills in front-end and back-end web development, including HTML, CSS, JavaScript, PHP, and MySQL. Created responsive websites and web applications using modern frameworks and libraries such as Bootstrap, Vue.js, and Laravel.'
+        },
+        {
+          title: 'University Specialist Diploma in ingeneering geodesy',
+          school: 'National Polytechnic University of Lviv, Ukraine',
+          date: '07/2003 - 12/2004',
+          description: 'Developed skills in geodesy, cartography, and land management. Conducted field surveys and created topographic maps using specialized software.'
+        },
+        {
+          title: 'Bachelor of Science in Geodesy and Land Management',
+          school: 'National Polytechnic University of Lviv, Ukraine',
+          date: '09/1999 - 06/2003',
+          description: 'Developed skills in geodesy, cartography, and land management. Conducted field surveys and created topographic maps using specialized software.'
+        }
+      ],
       skillsTitle: 'Skills'
     }
   },
@@ -108,6 +128,26 @@ const messages = {
         }
       ],
       educationTitle: 'Éducation',
+      educationItems: [
+        {
+          title: 'AEC en conception et programmation de sites WEB',
+          school: 'Collège de Maisonneuve, Montréal, QC, Canada',
+          date: '01/2023 - 05/2024',
+          description: 'Développé des compétences en développement web front-end et back-end, y compris HTML, CSS, JavaScript, PHP et MySQL. Créé des sites web et des applications web réactives en utilisant des frameworks et des bibliothèques modernes tels que Bootstrap, Vue.js et Laravel.'
+        },
+        {
+          title: 'Diplôme d\'études universitaires spécialisées en géodésie de l\'ingénieur',
+          school: 'Université polytechnique nationale de Lviv, Ukraine',
+          date: '07/2003 - 12/2004',
+          description: 'Développé des compétences en géodésie, cartographie et aménagement du territoire. Réalisé des levés sur le terrain et créé des cartes topographiques à l\'aide de logiciels spécialisés.'
+        },
+        {
+          title: 'Baccalauréat en géodésie et aménagement du territoire',
+          school: 'Université polytechnique nationale de Lviv, Ukraine',
+          date: '09/1999 - 06/2003',
+          description: 'Développé des compétences en géodésie, cartographie et aménagement du territoire. Réalisé des levés sur le terrain et créé des cartes topographiques à l\'aide de logiciels spécialisés.'
+        }
+      ],
       skillsTitle: 'Compétences'
     }
   },

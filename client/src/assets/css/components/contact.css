@@ -6,8 +6,6 @@
   transform: scale3d(0.8, 0.8, 0.8);
 }
 
-
-
 .input-error {
   color: var(--secondary-color-light);
   font-size: var(--text-xxs);
@@ -51,6 +49,8 @@
   color: var(--accent-color-light);
   transition: all 0.3s ease-in-out;
 }
+
+/* adapt the contact section to smaller screens */
 
 @media screen and (max-width: 1500px) {
   .contact-section {

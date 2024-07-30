@@ -8,7 +8,7 @@ const { t } = useI18n()
 
 <template>
   <main>
-    <section class="about-section">
+    <section class="page-container">
       <h1 class="section-title">{{ t('navigation.cv') }}</h1>
       <div class="about-container">
         <div class="about-content about-profile">

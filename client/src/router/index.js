@@ -44,7 +44,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  document.title = `Rostyslav Luchyshyn: ${to.name}`
+  document.title = `RL: ${to.name}`
   next()
 })
 

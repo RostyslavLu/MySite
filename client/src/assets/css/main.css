@@ -9,6 +9,8 @@
 
 /* base */
 @import url('base/composition.css');
+@import url('base/typography.css');
+@import url('base/general.css');
 
 /* components */
 @import url('components/navigation.css');

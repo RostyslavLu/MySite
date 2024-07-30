@@ -13,7 +13,7 @@
 }
 
 .about-title {
-  font-size: var(--text-sm);
+
   text-align: left;
 }
 
@@ -25,9 +25,6 @@
   flex: 1;
 }
 
-.about-text > p {
-  line-height: 1.6;
-}
 
 /* experience.css */
 
@@ -52,4 +49,10 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-xl);
+}
+
+@media screen and (max-width: 968px) {
+  .about-content {
+    flex-direction: column;
+  }
 }

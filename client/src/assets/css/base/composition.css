@@ -1,19 +1,15 @@
 body {
-    background-color: var(--main-color-dark);
-    color: var(--main-color-light);
-    min-height: 100dvh;
-    font-family: var(--main-font);
-    font-size: var(--text-xs);
-    display: flex;
-    flex-direction: column;
+  background-color: var(--main-color-dark);
+  color: var(--main-color-light);
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
 }
-.contact-section, .about-section {
-    padding: 0 350px;
+
+body > main {
+  padding: 0 350px;
 }
-  
-.section-title {
-    font-size: var(--text-xl);
-    text-align: left;
-    margin-bottom: var(--space-lg);
-  }
-  
+
+h1 {
+  margin-bottom: var(--space-lg);
+}

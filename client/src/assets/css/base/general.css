@@ -1,0 +1,8 @@
+/* inrhit main color */
+a {
+    color: inherit;
+}
+/* limit image width */
+img {
+    max-width: 100%;
+}

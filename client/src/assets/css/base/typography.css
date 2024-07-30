@@ -1,0 +1,18 @@
+/* set up the main font and text size */
+body {
+    font-family: var(--main-font);
+    font-size: var(--text-xs);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: clamp(var(--text-sm), 4vw, var(--text-xxl));
+    text-align: left;
+}
+
+h2 {
+    font-size: clamp(var(--text-xs), 2vw, var(--text-sm));
+}

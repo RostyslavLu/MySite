@@ -50,6 +50,25 @@
   transition: all 0.3s ease-in-out;
 }
 
+.contact {
+  animation: scaleElement 2s ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scaleElement {
+  0% {
+    transform: scale3d(0.3, 0.3, 0.3);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+}
+
+
+
 /* adapt the contact section to smaller screens */
 
 @media screen and (max-width: 1500px) {
@@ -57,6 +76,9 @@
     padding: 0 200px;
   }
   [id="main-navigation"] {
+    padding: 0 200px;
+  }
+  .main-header {
     padding: 0 200px;
   }
 }
@@ -68,6 +90,9 @@
   [id="main-navigation"] {
     padding: 0 100px;
   }
+  .main-header {
+    padding: 0 100px;
+  }
 }
 
 @media screen and (max-width: 968px) {
@@ -75,6 +100,9 @@
     padding: 0 50px;
   }
   [id="main-navigation"] {
+    padding: 0 50px;
+  }
+  .main-header {
     padding: 0 50px;
   }
   .contact-social-element span {

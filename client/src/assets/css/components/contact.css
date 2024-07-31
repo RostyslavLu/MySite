@@ -67,7 +67,33 @@
   }
 }
 
+.contact-social-element {
+  animation: fadeInElement 2s ease;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+  opacity: 0;
+}
 
+.contact-social-element:nth-child(2) {
+  animation-delay: 2.5s;
+}
+
+.contact-social-element:nth-child(3) {
+  animation-delay: 3s;
+}
+
+.contact-social-element:nth-child(4) {
+  animation-delay: 3.5s;
+}
+
+@keyframes fadeInElement {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 /* adapt the contact section to smaller screens */
 

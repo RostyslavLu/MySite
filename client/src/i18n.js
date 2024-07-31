@@ -50,6 +50,17 @@ const messages = {
             'Implementation of SEO best practices to improve site visibility.',
             'Training and supporting clients in the use of their sites.'
           ]
+        },
+        {
+          title: 'IT Technician (volunteer)',
+          company: 'Projet Immigrant',
+          date: '08/2023 - present',
+          taskDescription: [
+            'Installation and maintenance of computer hardware for new immigrants, ensuring access to necessary resources.',
+            'Providing technical assistance and training in basic computer skills and software use.',
+            'Coordination with other volunteers to provide efficient service to users.',
+            'Management and documentation of technical requests and problem resolution.'
+          ]
         }
       ],
       educationTitle: 'Education',
@@ -125,6 +136,17 @@ const messages = {
             'Mise en œuvre des meilleures pratiques SEO pour améliorer la visibilité du site.',
             'Formation et soutien des clients dans l\'utilisation de leurs sites.'
           ]
+        },
+        {
+          title: 'TECHNICIEN IT (BÉNÉVOLE)',
+          company: 'Projet Immigrant',
+          date: '08/2023 - à ce jour',
+          taskDescription: [
+            'Installation et maintenance de matériel informatique pour les nouveaux immigrants, assurant l\'accès aux ressources nécessaires.',
+            'Fourniture d\'une assistance technique et formation aux compétences de base en informatique et en utilisation de logiciels.',
+            'Coordination avec d\'autres bénévoles pour offrir un service efficace aux utilisateurs.',
+            'Gestion et documentation des demandes techniques et résolution des problèmes.'
+          ]
         }
       ],
       educationTitle: 'Éducation',
@@ -199,6 +221,17 @@ const messages = {
             'Вирішення проблем сумісності та оптимізація продуктивності.',
             'Впровадження найкращих практик SEO для покращення видимості сайту.',
             'Навчання та підтримка клієнтів у використанні їх сайтів.'
+          ]
+        },
+        {
+          title: 'ТЕХНІК ІТ (ВОЛОНТЕР)',
+          company: 'Проект Іммігрант',
+          date: '08/2023 - на даний момент',
+          taskDescription: [
+            'Встановлення та обслуговування комп\'ютерного обладнання для нових іммігрантів, забезпечуючи доступ до необхідних ресурсів.',
+            'Надання технічної допомоги та навчання основам роботи з комп\'ютером та програмним забезпеченням.',
+            'Координація з іншими волонтерами для надання ефективного обслуговування користувачів.',
+            'Управління та документування технічних запитів та вирішення проблем.'
           ]
         }
       ],

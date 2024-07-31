@@ -80,7 +80,7 @@
   text-decoration: solid underline var(--main-color-light);
   text-underline-offset: 5px;
 }
-.experience-container > p {
+.experience-item > p {
   margin-top: var(--space-s);
 }
 .experience-task-list {
@@ -91,10 +91,10 @@
 
 /* education.css */
 
-.education-container {
+.education-container, .experience-container {
   display: flex;
   flex-direction: column;
-  gap: var(--space-xl);
+  gap: var(--space-s);
 }
 
 @media screen and (max-width: 968px) {

@@ -1,14 +1,14 @@
 /* displays arrow in the bottom of the page if content is longer than the screen */
 .scroll-to-top {
     position: fixed;
-    bottom: var(--spacing-l);
+    bottom: var(--space-xl);
     transform: translateX(-50%);
     animation: bounce 2s infinite;
     color: var(--accent-color-medium);
 }
 .scroll-to-top svg {
-    max-width: var(--spacing-l);
-    max-height: var(--spacing-l);
+    max-width: var(--space-xl);
+    max-height: var(--space-xl);
     filter: drop-shadow(0 0 1px var(--accent-color-light));
 }
 

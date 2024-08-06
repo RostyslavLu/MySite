@@ -2,7 +2,6 @@
 @import url('variables/typography.css');
 @import url('variables/colors.css');
 @import url('variables/spacing.css');
-@import url('variables/dimensions.css');
 
 /* reset */
 @import url('reset/reset.css');
@@ -22,3 +21,4 @@
 @import url('components/dropdown.css');
 @import url('components/about.css');
 @import url('components/scroll-arrow.css');
+@import url('components/project.css');

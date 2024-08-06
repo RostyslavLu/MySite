@@ -2,7 +2,7 @@
 import { useI18n } from 'vue-i18n'
 import ExperienceList from '@/components/ExperienceList.vue'
 import EducationList from '@/components/EducationList.vue'
-
+import ScrollArrow from '@/components/ScrollArrow.vue'
 const { t } = useI18n()
 </script>
 
@@ -33,5 +33,6 @@ const { t } = useI18n()
         </div>
       </div>
     </section>
+    <ScrollArrow />
   </main>
 </template>

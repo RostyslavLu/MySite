@@ -24,6 +24,9 @@
 .about-content > * {
   flex: 1;
 }
+.page-container {
+  margin-bottom: var(--space-xl);
+}
 /* page animation */
 .page-container {
   animation: fadeInAnimation ease 3s;

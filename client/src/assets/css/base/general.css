@@ -6,3 +6,7 @@ a {
 img {
     max-width: 100%;
 }
+/* remove scrollbar */
+body::-webkit-scrollbar {
+    display: none;
+  }

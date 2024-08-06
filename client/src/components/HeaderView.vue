@@ -38,6 +38,7 @@ watch(() => i18n.global.locale.value, () => {
       <div class="main-header-text">
         <h1>{{ t('message.title') }}</h1>
         <p class="fade-in-text">{{ animatedText }}&nbsp;</p>
+        <router-link to="/projects" class="btn">{{ t('navigation.projects') }}</router-link>
       </div>
     </header>
   </Transition>

@@ -31,3 +31,14 @@ figure > img {
     gap: var(--space-lg);
     padding: var(--space-lg);
 }
+.project-card-links {
+    display: flex;
+    gap: var(--space-lg);
+}
+
+.project-card-links a {
+    margin-bottom: 0;
+    color: var(--main-color-dark);
+    border-radius: var(--space-s);
+    text-align: center;
+}

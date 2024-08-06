@@ -1,6 +1,7 @@
 /* inrhit main color */
 a {
     color: inherit;
+    text-decoration: none;
 }
 /* limit image width */
 img {

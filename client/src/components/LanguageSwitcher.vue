@@ -3,11 +3,10 @@ import { ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import enFlag from '@/assets/img/logo/en.png'
 import frFlag from '@/assets/img/logo/fr.png'
-import uaFlag from '@/assets/img/logo/ua.png'
 
 const i18n = useI18n()
 const { locale } = i18n
-const availableLocales = ref(['en', 'fr', 'ua'])
+const availableLocales = ref(['en', 'fr'])
 
 const selectedLocale = ref(locale.value)
 
@@ -21,8 +20,6 @@ const getFlagImage = (locale) => {
       return enFlag
     case 'fr':
       return frFlag
-    case 'ua':
-      return uaFlag
     default:
       return enFlag
   }

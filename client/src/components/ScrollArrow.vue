@@ -13,7 +13,7 @@ onMounted(() => {
   setTimeout(() => {
     window.addEventListener('scroll', handleScroll)
     handleScroll()
-  }, 3000)
+  }, 2500)
 })
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', handleScroll)

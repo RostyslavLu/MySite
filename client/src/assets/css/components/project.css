@@ -14,9 +14,9 @@ figure > img {
     flex-wrap: wrap;
     max-width: 100%;
     background-color: var(--main-color-light);
+    border: 3px solid var(--accent-color-medium);
     border-radius: var(--space-xs);
     color: var(--main-color-dark);
-    overflow: hidden;
 }
 .project-card-image {
     display: flex;
@@ -42,12 +42,11 @@ figure > img {
     border-radius: var(--space-s);
     text-align: center;
 }
-.product-card-tech {
+.project-card-tech {
     display: flex;
     gap: var(--space-s);
     flex-wrap: wrap;
 }
-.product-card-tech > span:hover{
-
+.project-card-tech > span:hover{
     transform: scale(1.2);
 }

@@ -1,0 +1,59 @@
+<script setup>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faGlobe } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLaravel, faPhp, faJs, faVuejs } from '@fortawesome/free-brands-svg-icons'
+import { defineProps } from 'vue'
+
+defineProps({
+  img: {
+    type: String,
+    required: false
+  },
+  alt: {
+    type: String,
+    required: false
+  },
+  title: {
+    type: String,
+    required: false
+  },
+  description: {
+    type: String,
+    required: false
+  }
+})
+</script>
+
+<template>
+  <div class="project-card">
+    <figure class="project-card-image">
+      <img :src="img" :alt="alt" loading="lazy" />
+    </figure>
+    <div class="project-card-info">
+      <h2>{{ title }}</h2>
+      <p> {{ description }}</p>
+      <div class="project-card-links">
+        <a href="https://app-vino.ca/" target="_blank" title="app site">
+          <FontAwesomeIcon :icon="faGlobe" />
+        </a>
+        <a href="https://github.com/RostyslavLu/app_vino" target="_blank" title="code GitHub">
+          <FontAwesomeIcon :icon="faGithub" />
+        </a>
+      </div>
+      <div class="project-card-tech">
+        <span title="PHP">
+          <FontAwesomeIcon :icon="faPhp" />
+        </span>
+        <span title="Laravel">
+          <FontAwesomeIcon :icon="faLaravel" />
+        </span>
+        <span title="JavaScript">
+          <FontAwesomeIcon :icon="faJs" />
+        </span>
+        <span title="VueJS">
+          <FontAwesomeIcon :icon="faVuejs" />
+        </span>
+      </div>
+    </div>
+  </div>
+</template>

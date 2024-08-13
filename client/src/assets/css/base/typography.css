@@ -2,6 +2,7 @@
 body {
     font-family: var(--main-font);
     font-size: var(--text-xs);
+    text-rendering: geometricPrecision;
 }
 
 h1, h2, h3, h4, h5, h6 {

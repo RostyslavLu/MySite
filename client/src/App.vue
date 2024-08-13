@@ -1,7 +1,6 @@
 <script setup>
 import AppLogo from '@/components/AppLogo.vue'
 import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
-
 </script>
 
 <template>

@@ -42,3 +42,12 @@ figure > img {
     border-radius: var(--space-s);
     text-align: center;
 }
+.product-card-tech {
+    display: flex;
+    gap: var(--space-s);
+    flex-wrap: wrap;
+}
+.product-card-tech > span:hover{
+
+    transform: scale(1.2);
+}

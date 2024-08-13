@@ -1,11 +1,11 @@
 :root {
-    --spacing-0: 0;
-    --spacing-xxs: 5px;
-    --spacing-xs: 10px;
-    --spacing-s: 15px;
-    --spacing-m: 20px;
-    --spacing-l: 25px;
-    --spacing-xl: 50px;
-    --spacing-xxl: 100px;
-    --spacing-xxxl: 250px;
+    --dimension-1: 1px;
+    --dimension-2: 2px;
+    --dimension-5: 5px;
+    --dimension-10: 10px;
+    --dimension-25: 25px;
+    --dimension-50: 50px;
+    --dimension-100: 100px;
+    --dimension-150: 150px;
+    --dimension-350: 350px;
 }

@@ -1,7 +1,8 @@
 /* displays arrow in the bottom of the page if content is longer than the screen */
 .scroll-to-top {
     position: fixed;
-    bottom: var(--space-xl);
+    bottom: 50%;
+    right: var(--space-xl);
     transform: translateX(-50%);
     animation: bounce 2s infinite;
     color: var(--accent-color-medium);

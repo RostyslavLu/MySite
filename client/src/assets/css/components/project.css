@@ -1,6 +1,5 @@
 figure > img {
     display: block;
-    max-width: 100%;
     object-fit: cover;
 }
 .projects-container {
@@ -13,10 +12,12 @@ figure > img {
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
+    min-height: 400px;
     background-color: var(--main-color-light);
     border: 3px solid var(--accent-color-medium);
-    border-radius: var(--space-xs);
+    border-radius: var(--space-s);
     color: var(--main-color-dark);
+    box-shadow: 0px 20px 30px -10px var(--accent-color-light);
 }
 .project-card-image {
     display: flex;
@@ -31,6 +32,9 @@ figure > img {
     gap: var(--space-lg);
     padding: var(--space-lg);
 }
+.project-card-info p {
+    font-size: var(--text-xxs);
+}
 .project-card-links {
     display: flex;
     gap: var(--space-lg);
@@ -39,7 +43,6 @@ figure > img {
 .project-card-links a {
     margin-bottom: 0;
     color: var(--main-color-dark);
-    border-radius: var(--space-s);
     text-align: center;
 }
 .project-card-tech {
@@ -49,4 +52,22 @@ figure > img {
 }
 .project-card-tech > span:hover{
     transform: scale(1.2);
+}
+
+.project-card {
+    animation: animationCard 2s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animationCard {
+    0% {
+        transform: perspective(500px) rotate3d(0, -1, -1, 90deg) scale(0.1);
+        transform-style: preserve-3d;
+        opacity: 0.5;
+    }
+    100% {
+        transform: perspective(500px) rotate3d(0, 0, 0, 0deg) scale(1);
+        opacity: 1;
+    }
 }

@@ -1,0 +1,101 @@
+{
+    "message": {
+      "title": "Mon portfolio",
+      "slogan": "Je m'appelle Rostyslav Luchyshyn et je suis un développeur web"
+    },
+    "navigation": {
+      "home": "Accueil",
+      "cv": "À propos",
+      "projects": "Projets",
+      "photogallery": "Galerie de photos",
+      "contact": "Contact"
+    },
+    "languageNames": {
+      "en": "Anglais",
+      "fr": "Français"
+    },
+    "contactForm": {
+      "title": "Contact",
+      "subtitle": "Contactez-moi par courriel ou réseaux sociaux",
+      "name": "Votre nom",
+      "email": "Votre courriel",
+      "message": "Votre message",
+      "submit": "Envoyer",
+      "messageSuccess": "Merci pour votre message!",
+      "placeholderName": "ex. Jean Dupont",
+      "placeholderEmail": "ex. jean@example.com",
+      "placeholderMessage": "Écrivez votre message ici",
+      "requiredName": "Nom est requis",
+      "requiredEmail": "Courriel est requis",
+      "requiredMessage": "Message est requis",
+      "requiredSymolsEmail": "Courriel doit avoir \"@\" et \".\""
+    },
+    "resume": {
+      "profilTitle": "Profil",
+      "profilText": "Je suis passionné par la création de sites web et d'applications interactives. Mon objectif est de contribuer à des projets innovants, d'apprendre continuellement et de grandir au sein d'une équipe dynamique. Je souhaite mettre en pratique mes compétences en développement front-end et back-end pour créer des expériences utilisateur exceptionnelles.",
+      "experienceTitle": "Expérience",
+      "experienceItems": [
+        {
+          "title": "DÉVELOPPEUR WEB STAGIAIRE",
+          "company": "Euro Style Design Inc",
+          "date": "04/2024 - 05/2024",
+          "taskDescription": [
+            "Développement et personnalisation de sites WordPress pour des clients, en utilisant des plugins tels que WooCommerce et Elementor.",
+            "Collaboration avec l'équipe de design pour traduire les besoins des clients en fonctionnalités techniques.",
+            "Résolution de problèmes de compatibilité et optimisation des performances.",
+            "Mise en œuvre des meilleures pratiques SEO pour améliorer la visibilité du site.",
+            "Formation et soutien des clients dans l'utilisation de leurs sites."
+          ]
+        },
+        {
+          "title": "TECHNICIEN IT (BÉNÉVOLE)",
+          "company": "Projet Immigrant",
+          "date": "08/2023 - à ce jour",
+          "taskDescription": [
+            "Installation et maintenance de matériel informatique pour les nouveaux immigrants, assurant l'accès aux ressources nécessaires.",
+            "Fourniture d'une assistance technique et formation aux compétences de base en informatique et en utilisation de logiciels.",
+            "Coordination avec d'autres bénévoles pour offrir un service efficace aux utilisateurs.",
+            "Gestion et documentation des demandes techniques et résolution des problèmes."
+          ]
+        }
+      ],
+      "educationTitle": "Éducation",
+      "educationItems": [
+        {
+          "title": "AEC en conception et programmation de sites WEB",
+          "school": "Collège de Maisonneuve, Montréal, QC, Canada",
+          "date": "01/2023 - 05/2024",
+          "description": "Développé des compétences en développement web front-end et back-end, y compris HTML, CSS, JavaScript, PHP et MySQL. Créé des sites web et des applications web réactives en utilisant des frameworks et des bibliothèques modernes tels que Bootstrap, Vue.js et Laravel."
+        },
+        {
+          "title": "Diplôme d'études universitaires spécialisées en géodésie de l'ingénieur",
+          "school": "Université polytechnique nationale de Lviv, Ukraine",
+          "date": "07/2003 - 12/2004",
+          "description": "Développé des compétences en géodésie, cartographie et aménagement du territoire. Réalisé des levés sur le terrain et créé des cartes topographiques à l'aide de logiciels spécialisés."
+        },
+        {
+          "title": "Baccalauréat en géodésie et aménagement du territoire",
+          "school": "Université polytechnique nationale de Lviv, Ukraine",
+          "date": "09/1999 - 06/2003",
+          "description": "Développé des compétences en géodésie, cartographie et aménagement du territoire. Réalisé des levés sur le terrain et créé des cartes topographiques à l'aide de logiciels spécialisés."
+        }
+      ],
+      "skillsTitle": "Compétences"
+    },
+    "projects": {
+      "title": "Projets",
+      "projectItems": [
+        {
+          "title": "App Vino",
+          "description": "App Vino est une application de recommandation de vins qui aide les utilisateurs à découvrir de nouveaux vins en fonction de leurs préférences. L'application utilise des algorithmes d'apprentissage automatique pour analyser les notes des utilisateurs et recommander des vins correspondant à leur profil de goût.",
+          "alt": "App Vino"
+        },
+        {
+          "title": "Projet 2",
+          "description": "Description du projet 2",
+          "alt": "Projet 2"
+        }
+      ]
+    }
+  }
+  

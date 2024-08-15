@@ -9,7 +9,7 @@ const { t } = useI18n()
 <template>
   <main>
     <section class="page-container">
-      <h1>{{ t('navigation.projects') }}</h1>
+      <h1>{{ t('projects.title') }}</h1>
       <ProjectCards />
     </section>
     <ScrollArrow />

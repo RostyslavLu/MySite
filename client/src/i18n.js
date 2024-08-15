@@ -1,6 +1,7 @@
+// language files are stored in the lang folder in the root of the project
 import { createI18n } from 'vue-i18n'
-import en from './lang/en.json' // Importing the English language file
-import fr from './lang/fr.json' // Importing the French language file
+import en from './lang/en.json' // Importing the English language file from JSON
+import fr from './lang/fr.json' // Importing the French language file from JSON
 
 const messages = {
   en: en,

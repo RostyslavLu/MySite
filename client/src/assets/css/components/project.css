@@ -45,6 +45,13 @@ figure > img {
     color: var(--main-color-dark);
     text-align: center;
 }
+
+.project-card-links-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .project-card-tech {
     display: flex;
     gap: var(--space-s);

@@ -1,8 +1,11 @@
 <script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faGlobe } from '@fortawesome/free-solid-svg-icons'
+import { faGlobe, faVideo } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLaravel, faPhp, faJs, faVuejs } from '@fortawesome/free-brands-svg-icons'
-import { defineProps } from 'vue'
+import { defineProps, ref } from 'vue'
+import Modal from './Modal.vue'
+
+const openModal = ref(false)
 
 defineProps({
   img: {
@@ -18,6 +21,10 @@ defineProps({
     required: false
   },
   description: {
+    type: String,
+    required: false
+  },
+  videoFile: {
     type: String,
     required: false
   }
@@ -39,6 +46,27 @@ defineProps({
         <a href="https://github.com/RostyslavLu/app_vino" target="_blank" title="code GitHub">
           <FontAwesomeIcon :icon="faGithub" />
         </a>
+        <button class="project-card-links-btn" title="presentation video" @click="openModal=true">
+          <FontAwesomeIcon :icon="faVideo" />
+        </button>
+        <Teleport to="body">
+          <Modal :show="openModal" @close="openModal=false">
+            <template #header>
+              <h3>{{ title }}</h3>
+            </template>
+            <template #body>
+              <video
+                width="100%"
+                height="auto"
+                controls
+                controlslist="nodownload nofullscreen noremoteplayback"
+                autoplay
+                >
+                <source :src="videoFile" type="video/mp4" />
+              </video>
+            </template>
+          </Modal>
+        </Teleport>
       </div>
       <div class="project-card-tech">
         <span title="PHP">

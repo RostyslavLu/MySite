@@ -1,6 +1,8 @@
 import { createI18n } from 'vue-i18n'
 import imageProjectVino from '@/assets/img/photos/images-app-vino/img5.jpg'
 import imageProjectTest from '@/assets/img/photos/images-app-vino/img1.jpg'
+import videoProjectVino from '@/assets/video/app-vino-web.mp4'
+
 const messages = {
   en: {
     message: {
@@ -93,6 +95,7 @@ const messages = {
           title: 'App Vino',
           description: 'App Vino is a wine recommendation app that helps users discover new wines based on their preferences. The app uses machine learning algorithms to analyze user ratings and recommend wines that match their taste profile.',
           media: imageProjectVino,
+          videoFile: videoProjectVino,
           alt: 'App Vino'
         },
         {
@@ -195,6 +198,7 @@ const messages = {
           title: 'App Vino',
           description: 'App Vino est une application de recommandation de vin qui aide les utilisateurs à découvrir de nouveaux vins en fonction de leurs préférences. L\'application utilise des algorithmes d\'apprentissage automatique pour analyser les évaluations des utilisateurs et recommander des vins qui correspondent à leur profil gustatif.',
           media: imageProjectVino,
+          video: videoProjectVino,
           alt: 'App Vino'
         },
         {

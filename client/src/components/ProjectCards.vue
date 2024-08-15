@@ -12,6 +12,7 @@ const { t } = useI18n()
       :description="t('projects.projectItems[0].description')"
       :img="t('projects.projectItems[0].media')"
       :alt="t('projects.projectItems[0].alt')"
+      :videoFile="t('projects.projectItems[0].videoFile')"
       />
   </div>
 </template>

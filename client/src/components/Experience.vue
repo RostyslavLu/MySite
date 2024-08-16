@@ -1,6 +1,7 @@
 <script setup>
 import { defineProps } from 'vue'
 import ExperienceList from '@/components/ExperienceList.vue'
+
 defineProps({
   titleExperience: {
     type: String,

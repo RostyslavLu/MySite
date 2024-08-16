@@ -1,8 +1,8 @@
 <script setup>
 import ProjectCard from './ProjectCard.vue'
 import { useI18n } from 'vue-i18n'
-import videoAppVino from '@/assets/video/app-vino-web.mp4'
-import imageAppVino from '@/assets/img/photos/images-app-vino/img5.jpg'
+import videoAppVino from '@/assets/video/app-vino-web.mp4' // import video file for the project App Vino
+import imageAppVino from '@/assets/img/photos/images-app-vino/img5.jpg' // import image file for the project App Vino
 const { t } = useI18n()
 </script>
 

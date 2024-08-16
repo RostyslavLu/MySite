@@ -1,6 +1,7 @@
 <script setup>
 import { defineProps } from 'vue'
 import { useI18n } from 'vue-i18n'
+
 defineProps({
   titleProfil: {
     type: String,

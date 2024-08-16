@@ -70,18 +70,18 @@ defineProps({
         </Teleport>
       </div>
       <div class="project-card-tech">
-        <span title="PHP">
+        <div title="PHP">
           <FontAwesomeIcon :icon="faPhp" />
-        </span>
-        <span title="Laravel">
+        </div>
+        <div title="Laravel">
           <FontAwesomeIcon :icon="faLaravel" />
-        </span>
-        <span title="JavaScript">
+        </div>
+        <div title="JavaScript">
           <FontAwesomeIcon :icon="faJs" />
-        </span>
-        <span title="VueJS">
+        </div>
+        <div title="VueJS">
           <FontAwesomeIcon :icon="faVuejs" />
-        </span>
+        </div>
       </div>
     </div>
   </div>

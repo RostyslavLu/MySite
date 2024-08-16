@@ -14,7 +14,7 @@ import CookieConsent from './components/CookieConsent.vue'
     <div class="main-navigation-links">
       <router-link to="/projects">{{ $t('navigation.projects') }}</router-link>
       <router-link to="/resume">{{ $t('navigation.cv') }}</router-link>
-      <router-link to="/photogallery">{{ $t('navigation.photogallery') }}</router-link>
+      <!-- <router-link to="/photogallery">{{ $t('navigation.photogallery') }}</router-link> -->
       <router-link to="/contact">{{ $t('navigation.contact') }}</router-link>
       <LanguageSwitcher />
     </div>

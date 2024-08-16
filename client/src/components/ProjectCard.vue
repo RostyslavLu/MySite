@@ -63,6 +63,7 @@ defineProps({
                 autoplay
                 >
                 <source :src="videoFile" type="video/mp4" />
+                Your browser does not support the video tag.
               </video>
             </template>
           </Modal>

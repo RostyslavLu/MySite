@@ -1,6 +1,7 @@
 <script setup>
 import AppLogo from '@/components/AppLogo.vue'
 import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
+import CookieConsent from './components/CookieConsent.vue'
 </script>
 
 <template>
@@ -13,10 +14,11 @@ import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
     <div class="main-navigation-links">
       <router-link to="/projects">{{ $t('navigation.projects') }}</router-link>
       <router-link to="/resume">{{ $t('navigation.cv') }}</router-link>
-      <!-- <router-link to="/photogallery">{{ $t('navigation.photogallery') }}</router-link> -->
+      <router-link to="/photogallery">{{ $t('navigation.photogallery') }}</router-link>
       <router-link to="/contact">{{ $t('navigation.contact') }}</router-link>
       <LanguageSwitcher />
     </div>
   </nav>
   <router-view />
+  <CookieConsent />
 </template>

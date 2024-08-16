@@ -47,7 +47,7 @@ const declineCookies = () => {
 
 .cookie-consent-banner button {
   margin-left: var(--space-s);
-  padding: var(--space-xs) var(--space-s);
+  padding: var(--space-s) var(--space-lg);
   color: var(--main-color-light);
   background-color: var(--accent-color-medium);
   border: none;

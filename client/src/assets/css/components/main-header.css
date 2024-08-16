@@ -26,7 +26,7 @@
 }
 
 .main-header > div h1 {
-  font-size: var(--text-xxl);
+  font-size: clamp(var(--text-md), 5vw, var(--text-xxl));
   font-weight: 700;
   text-shadow: 0 0 10px var(--main-color-dark);
 }

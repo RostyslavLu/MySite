@@ -56,6 +56,7 @@ figure > img {
     display: flex;
     gap: var(--space-s);
     flex-wrap: wrap;
+    margin-top: auto;
 }
 .project-card-tech > span:hover{
     transform: scale(1.2);

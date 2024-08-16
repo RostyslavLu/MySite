@@ -7,7 +7,7 @@
     display: none;
     position: absolute;
     background-color: transparent;
-    z-index: 1;
+    z-index: 10;
   }
 
   .dropdown-content a {
@@ -26,7 +26,11 @@
     filter: drop-shadow(0 0 4px var(--main-color-light));
   }
 
-  .dropdown:hover .dropdown-content {
+  .dropdown .dropdown-content {
+    display: none;
+  }
+  
+  .dropdown.open .dropdown-content {
     display: block;
   }
 

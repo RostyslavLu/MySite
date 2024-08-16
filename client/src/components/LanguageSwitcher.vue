@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch } from 'vue'
+import { ref, watch, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import enFlag from '@/assets/img/logo/en.png'
 import frFlag from '@/assets/img/logo/fr.png'
@@ -9,9 +9,10 @@ const { locale } = i18n
 const availableLocales = ref(['en', 'fr'])
 
 const selectedLocale = ref(locale.value)
-
+const dropdownOpen = ref(false)
 watch(selectedLocale, (newValue) => {
   i18n.locale.value = newValue
+  dropdownOpen.value = false
 })
 
 const getFlagImage = (locale) => {
@@ -25,15 +26,21 @@ const getFlagImage = (locale) => {
   }
 }
 
+const filteredLocales = computed(() => {
+  return availableLocales.value.filter(l => l !== selectedLocale.value)
+})
+const toggleDropdown = () => {
+  dropdownOpen.value = !dropdownOpen.value
+}
 </script>
 
 <template>
-  <div class="dropdown">
-    <button class="dropbtn">
+  <div :class="['dropdown', { open: dropdownOpen }]">
+    <button class="dropbtn" @click="toggleDropdown">
       <img :src="getFlagImage(selectedLocale)" alt="Flag" width="36px" height="24px" loading="lazy" />
     </button>
     <div class="dropdown-content">
-      <a v-for="locale in availableLocales" :key="locale" @click="selectedLocale = locale">
+      <a v-for="locale in filteredLocales" :key="locale" @click="selectedLocale = locale">
         <img :src="getFlagImage(locale)" alt="Flag" width="36px" height="24px" loading="lazy" />
       </a>
     </div>

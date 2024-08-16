@@ -14,10 +14,18 @@ const { t } = useI18n()
     <section class="page-container">
       <h1 class="section-title">{{ t('navigation.cv') }}</h1>
       <div class="about-container">
-        <Profil />
-        <Experience />
-        <Education />
-        <Skills />
+        <Profil
+          :titleProfil = "t('resume.profilTitle')"
+        />
+        <Experience
+          :titleExperience = "t('resume.experienceTitle')"
+        />
+        <Education
+          :titleEducation = "t('resume.educationTitle')"
+        />
+        <Skills
+          :titleSkills = "t('resume.skillsTitle')"
+        />
       </div>
     </section>
     <ScrollArrow />

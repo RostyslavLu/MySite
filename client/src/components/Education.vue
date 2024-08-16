@@ -1,13 +1,18 @@
 <script setup>
-import { useI18n } from 'vue-i18n'
+import { defineProps } from 'vue'
 import EducationList from '@/components/EducationList.vue'
 
-const { t } = useI18n()
+defineProps({
+  titleEducation: {
+    type: String,
+    required: false
+  }
+})
 </script>
 
 <template>
   <div class="about-content about-education">
-    <h2 class="about-title">{{ t('resume.educationTitle') }}</h2>
+    <h2 class="about-title">{{ titleEducation }}</h2>
     <div class="about-text">
       <EducationList />
     </div>

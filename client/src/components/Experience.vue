@@ -1,13 +1,17 @@
 <script setup>
-import { useI18n } from 'vue-i18n'
+import { defineProps } from 'vue'
 import ExperienceList from '@/components/ExperienceList.vue'
-
-const { t } = useI18n()
+defineProps({
+  titleExperience: {
+    type: String,
+    required: false
+  }
+})
 </script>
 
 <template>
   <div class="about-content about-experience">
-    <h2 class="about-title">{{ t('resume.experienceTitle') }}</h2>
+    <h2 class="about-title">{{ titleExperience }}</h2>
     <div class="about-text">
       <ExperienceList />
     </div>

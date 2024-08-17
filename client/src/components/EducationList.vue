@@ -1,6 +1,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 import EducationListItem from './EducationListItem.vue'
+
 const { t } = useI18n()
 </script>
 

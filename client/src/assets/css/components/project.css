@@ -54,13 +54,16 @@ figure > img {
 
 .project-card-tech {
     display: flex;
-    gap: var(--space-s);
+    gap: var(--space-lg);
     flex-wrap: wrap;
     margin-top: auto;
 }
-.project-card-tech > span:hover{
-    transform: scale(1.2);
+/* .project-card-tech > div {
+    cursor: pointer;
 }
+.project-card-tech > div:hover{
+    transform: scale(2);
+} */
 
 .project-card {
     animation: animationCard 2s ease;

@@ -1,7 +1,7 @@
 <script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faGlobe, faVideo } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLaravel, faPhp, faJs, faVuejs } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLaravel, faPhp, faJs, faVuejs, faHtml5, faCss3 } from '@fortawesome/free-brands-svg-icons'
 import { defineProps, ref } from 'vue'
 import Modal from './Modal.vue'
 
@@ -62,7 +62,9 @@ defineProps({
                 controlslist="nodownload nofullscreen noremoteplayback"
                 autoplay
                 >
-                <source :src="videoFile" type="video/mp4" />
+                <source
+                  :src="videoFile"
+                  type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </template>
@@ -81,6 +83,12 @@ defineProps({
         </div>
         <div title="VueJS">
           <FontAwesomeIcon :icon="faVuejs" />
+        </div>
+        <div title="HTML5">
+          <FontAwesomeIcon :icon="faHtml5" />
+        </div>
+        <div title="CSS3">
+          <FontAwesomeIcon :icon="faCss3" />
         </div>
       </div>
     </div>

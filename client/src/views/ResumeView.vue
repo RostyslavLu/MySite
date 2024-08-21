@@ -4,6 +4,7 @@ import Experience from '@/components/Experience.vue'
 import Education from '@/components/Education.vue'
 import Profil from '@/components/Profil.vue'
 import Skills from '@/components/Skills.vue'
+import DownloadCv from '@/components/DownloadCv.vue'
 import ScrollArrow from '@/components/ScrollArrow.vue'
 
 const { t } = useI18n()
@@ -26,6 +27,7 @@ const { t } = useI18n()
         <Skills
           :titleSkills = "t('resume.skillsTitle')"
         />
+        <DownloadCv />
       </div>
     </section>
     <ScrollArrow />

@@ -80,7 +80,8 @@
           "description": "Developed skills in geodesy, cartography, and land management. Conducted field surveys and created topographic maps using specialized software."
         }
       ],
-      "skillsTitle": "Skills"
+      "skillsTitle": "Skills",
+      "downloadCvTitle": "Download CV"
     },
     "projects": {
       "title": "My projects",
@@ -91,9 +92,9 @@
           "alt": "App Vino"
         },
         {
-          "title": "Project 2",
-          "description": "Description of the project 2",
-          "alt": "Project 2"
+          "title": "My portfolio",
+          "description": "My portfolio is a showcase of my web development projects. It features a responsive design and interactive elements to engage visitors and showcase my skills.",
+          "alt": "My portfolio"
         }
       ]
     }

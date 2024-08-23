@@ -1,11 +1,14 @@
 <script setup>
-import { ref, onMounted, watch } from 'vue'
+import { ref, onMounted, watch, computed } from 'vue'
 import { i18n } from '@/i18n'
-
+import HeaderBtn from '@/components/HeaderBtn.vue'
 const t = i18n.global.t
 
 const animatedText = ref('')
 let text = t('message.slogan')
+
+const DownloadCv = computed(() => t('resume.downloadCvTitle'))
+const Portfolio = computed(() => t('navigation.projects'))
 
 const updateAnimatedText = () => {
   animatedText.value = ''
@@ -29,6 +32,12 @@ watch(() => i18n.global.locale.value, () => {
   updateAnimatedText()
 })
 
+const DownloadDocument = () => {
+  const link = document.createElement('a')
+  link.href = '@/assets/doc/CV - Rostyslav Luchyshyn.pdf'
+  link.download = 'CV-RL.pdf'
+  link.click()
+}
 </script>
 
 <template>
@@ -38,8 +47,26 @@ watch(() => i18n.global.locale.value, () => {
       <div class="main-header-text">
         <h1>{{ t('message.title') }}</h1>
         <p class="fade-in-text">{{ animatedText }}&nbsp;</p>
-        <router-link to="/projects" class="btn">{{ t('navigation.projects') }}</router-link>
+        <div class="main-header-buttons">
+          <HeaderBtn
+            :titleBtn="DownloadCv"
+            :action="DownloadDocument"
+          />
+          <HeaderBtn
+            :titleBtn="Portfolio"
+            :action="() => $router.push('/projects')"
+          />
+        </div>
       </div>
     </header>
   </Transition>
 </template>
+
+<style scoped>
+.main-header-buttons {
+  display: flex;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+</style>

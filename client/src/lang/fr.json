@@ -80,7 +80,8 @@
           "description": "Développé des compétences en géodésie, cartographie et aménagement du territoire. Réalisé des levés sur le terrain et créé des cartes topographiques à l'aide de logiciels spécialisés."
         }
       ],
-      "skillsTitle": "Compétences"
+      "skillsTitle": "Compétences",
+      "downloadCvTitle": "Télécharger CV"
     },
     "projects": {
       "title": "Projets",
@@ -91,9 +92,9 @@
           "alt": "App Vino"
         },
         {
-          "title": "Projet 2",
-          "description": "Description du projet 2",
-          "alt": "Projet 2"
+          "title": "Mon portfolio",
+          "description": "Mon portfolio est un site web personnel qui présente mes compétences et mes projets. Il a été développé avec Vue.js et Bootstrap, et est entièrement responsive pour une expérience utilisateur optimale.",
+          "alt": "Mon portfolio"
         }
       ]
     }

@@ -27,7 +27,9 @@ const { t } = useI18n()
         <Skills
           :titleSkills = "t('resume.skillsTitle')"
         />
-        <DownloadCv />
+        <DownloadCv
+          :titleDownload = "t('resume.downloadCvTitle')"
+        />
       </div>
     </section>
     <ScrollArrow />

@@ -1,3 +1,15 @@
+/**
+* Contact page styles
+*/
+
+/* container styles */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-xl);
+  margin-top: var(--space-lg);
+}
+
 .message-enter-active, .message-leave-active {
   transition: all 400ms ease-in-out;
 }
@@ -5,17 +17,10 @@
   opacity: 0;
   transform: scale3d(0.8, 0.8, 0.8);
 }
-
+/** error message styles */
 .input-error {
   color: var(--secondary-color-light);
   font-size: var(--text-xxs);
-}
-
-.contact-container {
-  display: flex;
-  justify-content: space-between;
-  gap: var(--space-xl);
-  margin-top: var(--space-lg);
 }
 
 .contact-social {

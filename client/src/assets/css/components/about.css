@@ -1,3 +1,8 @@
+/** 
+ * About page styles
+ */
+
+ /** container styles for about page */
 .about-container {
   display: flex;
   flex-direction: column;
@@ -11,9 +16,8 @@
   border-bottom: 2px solid var(--main-color-light);
   padding-bottom: var(--space-lg);
 }
-
+/** title section styles */
 .about-title {
-
   text-align: left;
 }
 
@@ -21,12 +25,15 @@
   font-size: var(--text-xxs);
   text-align: left;
 }
+
 .about-content > * {
   flex: 1;
 }
+
 .page-container {
   margin-bottom: var(--space-xl);
 }
+
 /* page animation */
 .page-container {
   animation: fadeInAnimation ease 3s;

@@ -61,12 +61,3 @@ const DownloadDocument = () => {
     </header>
   </Transition>
 </template>
-
-<style scoped>
-.main-header-buttons {
-  display: flex;
-  gap: var(--space-lg);
-  flex-wrap: wrap;
-}
-
-</style>

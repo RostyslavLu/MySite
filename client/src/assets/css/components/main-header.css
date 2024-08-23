@@ -1,4 +1,4 @@
-/** style for header image **/
+/** style for main header container **/
 .main-header {
     position: relative;
     min-height: 70dvh;
@@ -7,7 +7,7 @@
     justify-content: flex-start;
     padding: 0 350px;
 }
-
+/** style for main header image **/
 .main-header > img {
   position: absolute;
   inset: 0;
@@ -15,26 +15,32 @@
   height: 100%;
   object-fit: cover;
 }
-
+/** text container in main header **/
 .main-header > div {
   position: relative;
   text-align: left;
 }
-
+/** margin between text elements **/
 .main-header > div > * + * {
   margin-top: var(--space-lg);
 }
-
+/** font style for main header text **/
 .main-header > div h1 {
   font-size: clamp(var(--text-md), 5vw, var(--text-xxl));
   font-weight: 700;
   text-shadow: 0 0 10px var(--main-color-dark);
 }
-
+/** secondary text style for main header **/
 .main-header > div p {
   font-size: var(--text-xs);
   font-weight: 500;
   text-shadow: 0 0 20px var(--main-color-dark);
+}
+/** style for header buttons **/
+.main-header-buttons {
+  display: flex;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
 }
 
 /** transition effect on load */
@@ -49,4 +55,3 @@
   transform: scale3d(0.8, 0.8, 0.8);
   filter: blur(10px);
 }
-

@@ -64,25 +64,3 @@ import { faDatabase } from '@fortawesome/free-solid-svg-icons'
     </div>
   </div>
 </template>
-
-<style scoped>
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: var(--space-s);
-  justify-content: center;
-}
-
-.skills-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.skills-item p {
-  margin-top: var(--space-xxs);
-}
-.skills-item svg {
-  font-size: 3rem;
-}
-</style>

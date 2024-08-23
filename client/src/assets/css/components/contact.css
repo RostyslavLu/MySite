@@ -9,7 +9,7 @@
   gap: var(--space-xl);
   margin-top: var(--space-lg);
 }
-
+/* form sent message animation */
 .message-enter-active, .message-leave-active {
   transition: all 400ms ease-in-out;
 }
@@ -17,12 +17,12 @@
   opacity: 0;
   transform: scale3d(0.8, 0.8, 0.8);
 }
-/** error message styles */
+/* error message styles */
 .input-error {
   color: var(--secondary-color-light);
   font-size: var(--text-xxs);
 }
-
+/* social media links container styles */
 .contact-social {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -39,12 +39,12 @@
   align-items: center;
   gap: var(--space-s);
 }
-
+/* social media icon svg styles */
 .contact-social-element svg {
   width: 48px;
   height: 48px;
 }
-
+/* social media text styles */
 .contact-social-element span {
   font-size: var(--text-xxs);
   font-weight: 500;
@@ -54,7 +54,7 @@
   color: var(--accent-color-light);
   transition: all 0.3s ease-in-out;
 }
-
+/* form animation */
 .contact {
   animation: scaleElement 2s ease-out;
   animation-iteration-count: 1;
@@ -71,7 +71,7 @@
     opacity: 1;
   }
 }
-
+/* social media links animation */
 .contact-social-element {
   animation: fadeInElement 2s ease;
   animation-fill-mode: both;

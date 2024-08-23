@@ -2,13 +2,13 @@
  * About page styles
  */
 
- /** container styles for about page */
+ /* container styles for about page */
 .about-container {
   display: flex;
   flex-direction: column;
   gap: var(--space-xl);
 }
-
+/* about element container styles */
 .about-content {
   display: flex;
   flex-direction: row;
@@ -16,11 +16,11 @@
   border-bottom: 2px solid var(--main-color-light);
   padding-bottom: var(--space-lg);
 }
-/** title section styles */
+/* title section styles */
 .about-title {
   text-align: left;
 }
-
+/* text styles */
 .about-text {
   font-size: var(--text-xxs);
   text-align: left;

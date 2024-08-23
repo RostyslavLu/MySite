@@ -1,16 +1,16 @@
-/* Dropdown Button style */
+/* Dropdown language selector component */
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
+/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: transparent;
   z-index: 10;
 }
-
+/* links in dropdown */
 .dropdown-content a {
   color: var(--main-color-dark);
   padding: var(--space-s);
@@ -18,11 +18,11 @@
   display: block;
   cursor: pointer;
 }
-
+/* flag images in dropdown inactive state */
 .dropdown-content img {
   filter: grayscale(70%);
 }
-
+/* flag images in dropdown hover state */
 .dropdown-content img:hover {
   filter: grayscale(0%);
   filter: drop-shadow(0 0 4px var(--main-color-light));

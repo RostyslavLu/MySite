@@ -1,13 +1,17 @@
+/** Projects page styles */
+/* project card image styles */
 figure > img {
     display: block;
     object-fit: cover;
 }
+/* container styles */
 .projects-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     gap: var(--space-lg);
 }
+/* project card styles */
 .project-card {
     display: flex;
     flex-wrap: wrap;
@@ -19,11 +23,13 @@ figure > img {
     color: var(--main-color-dark);
     box-shadow: 0px 20px 30px -10px var(--accent-color-light);
 }
+/* project card image block styles */
 .project-card-image {
     display: flex;
     flex-basis: 300px;
     flex-grow: 1;
 }
+/* project card text block styles */
 .project-card-info {
     display: flex;
     flex-direction: column;
@@ -32,9 +38,11 @@ figure > img {
     gap: var(--space-lg);
     padding: var(--space-lg);
 }
+/* font size for project card description text */
 .project-card-info p {
     font-size: var(--text-xxs);
 }
+/* project card links block styles */
 .project-card-links {
     display: flex;
     gap: var(--space-lg);
@@ -45,26 +53,20 @@ figure > img {
     color: var(--main-color-dark);
     text-align: center;
 }
-
+/* project card links button styles */
 .project-card-links-btn {
     background: none;
     border: none;
     cursor: pointer;
 }
-
+/* project card technologies block styles */
 .project-card-tech {
     display: flex;
     gap: var(--space-lg);
     flex-wrap: wrap;
     margin-top: auto;
 }
-/* .project-card-tech > div {
-    cursor: pointer;
-}
-.project-card-tech > div:hover{
-    transform: scale(2);
-} */
-
+/** Animation card appearance */
 .project-card {
     animation: animationCard 2s ease;
     animation-iteration-count: 1;

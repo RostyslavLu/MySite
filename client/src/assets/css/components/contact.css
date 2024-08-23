@@ -75,20 +75,20 @@
 .contact-social-element {
   animation: fadeInElement 2s ease;
   animation-fill-mode: both;
-  animation-delay: 2s;
+  animation-delay: 1s;
   opacity: 0;
 }
 
 .contact-social-element:nth-child(2) {
-  animation-delay: 2.5s;
+  animation-delay: 1.5s;
 }
 
 .contact-social-element:nth-child(3) {
-  animation-delay: 3s;
+  animation-delay: 2.0s;
 }
 
 .contact-social-element:nth-child(4) {
-  animation-delay: 3.5s;
+  animation-delay: 2.5s;
 }
 
 @keyframes fadeInElement {

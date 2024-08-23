@@ -43,7 +43,7 @@
   border: none;
   cursor: pointer;
 }
-
+/* image size in dropdown */
 .dropbtn img {
   height: 24px;
 }

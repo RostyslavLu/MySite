@@ -13,3 +13,8 @@ body > main {
 h1 {
   margin-bottom: var(--space-lg);
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}

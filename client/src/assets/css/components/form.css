@@ -1,24 +1,23 @@
-form {
-    display: flex;
-    flex-direction: column;
-}
-
+/**
+ * user input form styles
+ */
+/* message container styles */
 .form-message {
     margin-top: var(--space-lg);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+/* margins for form blocks */
 .form-group {
     margin-bottom: var(--space-lg);
 }
-
+/* display for input and textarea in form */
 .form-group input, .form-group textarea {
     display: block;
     min-width: 100%;
 }
-
+/* input and textarea styles */
 .form-group input, .form-group textarea {
     border: 1px solid var(--main-color-light);
     border-radius: var(--space-xs);
@@ -26,20 +25,20 @@ form {
     padding: var(--space-s);
     min-height: 40px;
 }
-
+/* textarea resize permission */
 .form-group textarea {
     resize: vertical;
 }
-
+/* font size for form labels */
 .form-group label {
     font-size: var(--text-xxs);
 }
-
+/* placeholder styles */
 .form-group input::placeholder, .form-group textarea::placeholder {
     color: var(--main-color-medium);
     font-family: var(--secondary-font);
 }
-
+/* animation for form element */
 .form-enter-active, .form-leave-active {
     transition: all 2000ms ease-in-out;
 }
@@ -48,7 +47,7 @@ form {
     opacity: 0;
     transform: translateX(-100%);
 }
-
+/* label container styles */
 .input-label {
     display: flex;
     justify-content: flex-start;

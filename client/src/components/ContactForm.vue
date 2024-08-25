@@ -26,18 +26,30 @@ const onSubmit = (e) => {
   if (form.value.name === '' || form.value.email === '' || form.value.message === '' || form.value.email.indexOf('@') === -1 || form.value.email.indexOf('.') === -1) {
     if (form.value.name === '') {
       errors.value.name = t('contactForm.requiredName')
+      setTimeout(() => {
+        errors.value.name = ''
+      }, 3000)
     } else {
       errors.value.name = ''
     }
     if (form.value.email === '') {
       errors.value.email = t('contactForm.requiredEmail')
+      setTimeout(() => {
+        errors.value.email = ''
+      }, 3000)
     } else if (form.value.email.indexOf('@') === -1 || form.value.email.indexOf('.') === -1) {
       errors.value.email = t('contactForm.requiredSymolsEmail')
+      setTimeout(() => {
+        errors.value.email = ''
+      }, 3000)
     } else {
       errors.value.email = ''
     }
     if (form.value.message === '') {
       errors.value.message = t('contactForm.requiredMessage')
+      setTimeout(() => {
+        errors.value.message = ''
+      }, 3000)
     } else {
       errors.value.message = ''
     }

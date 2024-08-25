@@ -52,4 +52,9 @@
   border: none;
   border-radius: var(--space-lg);
   cursor: pointer;
+  font-size: var(--text-btn);
+  font-weight: bold;
+}
+.header-btn:hover {
+  color: var(--accent-color-light);
 }

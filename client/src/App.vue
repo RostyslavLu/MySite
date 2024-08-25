@@ -21,7 +21,3 @@ import CookieConsent from './components/CookieConsent.vue'
   <router-view />
   <CookieConsent />
 </template>
-
-<style scoped>
-
-</style>

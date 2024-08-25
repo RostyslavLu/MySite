@@ -54,6 +54,7 @@
     animation: navFadeIn 2s ease-in-out;
     transform: translate(0, 0);
     animation-fill-mode: forwards;
+    animation-iteration-count: 1;
 }
 
 @keyframes navFadeIn {

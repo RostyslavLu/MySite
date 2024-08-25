@@ -7,12 +7,13 @@
     animation: bounce 2s infinite;
     color: var(--accent-color-medium);
 }
+/* arrow icon styles */
 .scroll-to-top svg {
     max-width: var(--space-xl);
     max-height: var(--space-xl);
     filter: drop-shadow(0 0 1px var(--accent-color-light));
 }
-
+/* scroll arrow animation */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
       transform: translateY(0);

@@ -19,8 +19,9 @@
 }
 /* error message styles */
 .input-error {
-  color: var(--secondary-color-light);
+  color: var(--secondary-color-medium);
   font-size: var(--text-xxs);
+  font-weight: 500;
 }
 /* social media links container styles */
 .contact-social {

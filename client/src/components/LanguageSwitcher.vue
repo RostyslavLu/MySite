@@ -43,6 +43,9 @@ const filteredLocales = computed(() => {
 // toggleDropdown function
 const toggleDropdown = () => {
   dropdownOpen.value = !dropdownOpen.value
+  setTimeout(() => {
+    dropdownOpen.value = false
+  }, 5000)
 }
 
 </script>

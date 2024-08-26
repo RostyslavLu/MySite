@@ -8,12 +8,11 @@
   display: none;
   position: absolute;
   background-color: transparent;
-  z-index: 10;
 }
 /* links in dropdown */
 .dropdown-content a {
   color: var(--main-color-dark);
-  padding: var(--space-s);
+  padding: 0 var(--space-s);
   text-decoration: none;
   display: block;
   cursor: pointer;

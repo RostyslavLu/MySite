@@ -4,7 +4,7 @@ import ProjectsView from '@/views/ProjectsView.vue'
 import ResumeView from '@/views/ResumeView.vue'
 import ContactView from '@/views/ContactView.vue'
 import App from '@/App.vue'
-
+// The routes array is an array of objects that define the routes for the application
 const routes = [
   {
     path: '/',
@@ -31,7 +31,7 @@ const routes = [
     component: App
   }
 ]
-
+// The createRouter function is called with an object that contains the history mode and the routes array
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes

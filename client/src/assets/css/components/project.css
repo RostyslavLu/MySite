@@ -84,3 +84,9 @@ figure > img {
         opacity: 1;
     }
 }
+/* mobile adaptation */
+@media screen and (max-width: 968px) {
+    .project-card {
+        flex-direction: column;
+    }
+}

@@ -87,13 +87,13 @@
       "title": "My projects",
       "projectItems": [
         {
-          "title": "App Vino",
-          "description": "App Vino is a wine recommendation app that helps users discover new wines based on their preferences. The app uses machine learning algorithms to analyze user ratings and recommend wines that match their taste profile.",
+          "title": "Vino Project (College Maisonneuve)",
+          "description": "This project involved the enhancement and development of a transactional web application, carried out in a team of 3 members. The application, named 'Vino' was designed to help users manage their wine cellars. Utilizing AGILE/SCRUM project management methodologies and Git for version control, the project was developed with a mobile-first approach. The final product allowed users to view and update their wine inventory from various devices (Mac, PC, Android, iOS) and across major browsers. The project was completed in three phases, focusing on design, code restructuring, bug fixes, and adding essential features, with each team member contributing to both front-end and back-end development.",
           "alt": "App Vino"
         },
         {
           "title": "My portfolio",
-          "description": "My portfolio is a showcase of my web development projects. It features a responsive design and interactive elements to engage visitors and showcase my skills.",
+          "description": "This project is a bilingual website (English and French) developed using Vue.js 3 for the front-end and Node.js for the back-end. The site features a smooth, modern user interface with a strong focus on responsiveness and user experience. With Vue Router and i18n integration, users can seamlessly switch between the English and French versions. The Node.js backend efficiently handles requests, ensuring optimized performance. This project showcases my full-stack development skills, emphasizing dynamic, multilingual interfaces.",
           "alt": "My portfolio"
         }
       ]

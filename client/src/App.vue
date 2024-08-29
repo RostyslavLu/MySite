@@ -19,7 +19,7 @@ const closeMenu = () => {
 <template>
 <!-- Navigation -->
   <nav id="main-navigation">
-      <router-link to="/" aria-label="Home-link">
+      <router-link to="/" @click="closeMenu">
         <AppLogo />
       </router-link>
       <button @click="toggleMenu" aria-label="Menu-button">
@@ -29,7 +29,7 @@ const closeMenu = () => {
       <router-link to="/projects" @click="closeMenu">{{ $t('navigation.projects') }}</router-link>
       <router-link to="/resume" @click="closeMenu">{{ $t('navigation.cv') }}</router-link>
       <router-link to="/contact" @click="closeMenu">{{ $t('navigation.contact') }}</router-link>
-      <LanguageSwitcher />
+      <LanguageSwitcher @click="closeMenu" />
     </div>
   </nav>
   <router-view />

@@ -144,3 +144,11 @@ const triggerShake = (e) => {
     </Transition>
   </div>
 </template>
+
+<style scoped>
+.form-captcha {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--space-s);
+}
+</style>

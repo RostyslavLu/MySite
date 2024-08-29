@@ -10,6 +10,7 @@ const availableLocales = ref(['en', 'fr'])
 
 const selectedLocale = ref(locale.value)
 const dropdownOpen = ref(false)
+
 watch(selectedLocale, (newValue) => {
   i18n.locale.value = newValue
   dropdownOpen.value = false
@@ -36,8 +37,8 @@ const getAltText = (locale) => {
       return 'Flag'
   }
 }
+// check if the device is mobile
 const isMobile = ref(window.innerWidth < 976)
-console.log(isMobile.value)
 
 const filteredLocales = computed(() => {
   return availableLocales.value.filter(l => l !== selectedLocale.value)

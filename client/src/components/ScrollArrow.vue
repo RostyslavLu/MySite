@@ -13,7 +13,7 @@ onMounted(() => {
   setTimeout(() => {
     window.addEventListener('scroll', handleScroll)
     handleScroll()
-  }, 2500)
+  }, 1500)
 })
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', handleScroll)
@@ -21,6 +21,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
+  <!-- Scroll Arrow template -->
   <div class="scroll-to-top" v-if="showArrow">
     <FontAwesomeIcon :icon="faAnglesDown" />
   </div>

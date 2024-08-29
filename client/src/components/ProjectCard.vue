@@ -59,6 +59,7 @@ defineProps({
 </script>
 
 <template>
+  <!-- project card template -->
   <div class="project-card">
     <figure class="project-card-image">
       <img :src="img" :alt="alt" loading="lazy" />

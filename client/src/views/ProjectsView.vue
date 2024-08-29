@@ -7,6 +7,7 @@ const { t } = useI18n()
 </script>
 
 <template>
+  <!-- Projects page -->
   <main>
     <section class="page-container">
       <h1>{{ t('projects.title') }}</h1>

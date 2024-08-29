@@ -4,6 +4,7 @@ import HeaderView from '@/components/HeaderView.vue'
 </script>
 
 <template>
+  <!-- Home page -->
   <main>
     <HeaderView />
   </main>

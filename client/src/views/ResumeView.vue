@@ -11,6 +11,7 @@ const { t } = useI18n()
 </script>
 
 <template>
+  <!-- Resume page -->
   <main>
     <section class="page-container">
       <h1 class="section-title">{{ t('navigation.cv') }}</h1>

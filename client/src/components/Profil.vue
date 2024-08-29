@@ -12,6 +12,7 @@ const { t } = useI18n()
 </script>
 
 <template>
+  <!-- Profil component -->
   <div class="about-content about-profile">
     <h2 class="about-title">{{ titleProfil }}</h2>
     <div class="about-text">

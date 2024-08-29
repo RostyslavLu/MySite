@@ -10,5 +10,6 @@ defineProps({
 </script>
 
 <template>
+  <!-- Task description item template -->
   <li class="experience-task-list-item">{{ taskDescriptionItem }}</li>
 </template>

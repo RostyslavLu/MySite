@@ -14,6 +14,7 @@ const emit = defineEmits(['close'])
 </script>
 
 <template>
+  <!-- Modal template -->
   <Transition name="modal">
     <div class="modal" v-if="show" @click="closeModal">
       <div class="modal-content" @click.stop>

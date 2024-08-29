@@ -5,6 +5,7 @@ import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 </script>
 
 <template>
+  <!-- list of skills -->
   <div class="skills-container">
     <div class="skills-item">
       <FontAwesomeIcon :icon="faHtml5" />

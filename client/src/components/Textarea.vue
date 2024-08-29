@@ -10,6 +10,7 @@ const textarea = ref(null)
 </script>
 
 <template>
+  <!-- Textarea template -->
   <textarea
     class=""
     v-model="model"

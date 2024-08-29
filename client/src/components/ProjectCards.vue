@@ -16,6 +16,7 @@ const gitPortfolio = 'https://github.com/RostyslavLu/MySite.git'
 </script>
 
 <template>
+  <!-- list of projects -->
   <div class="projects-container">
     <ProjectCard
       :siteUrl="vinoUrl"

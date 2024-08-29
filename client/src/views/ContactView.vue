@@ -4,6 +4,7 @@ import ContactSocial from '@/components/ContactSocial.vue'
 </script>
 
 <template>
+  <!-- Contact page -->
   <main>
     <section class="page-container">
       <h1 class="section-title">{{ $t('contactForm.title') }}</h1>

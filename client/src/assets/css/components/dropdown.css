@@ -46,3 +46,24 @@
 .dropbtn img {
   height: 24px;
 }
+/* adapt dropdown to mobile */
+.language-switcher-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+.language-switcher-mobile button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.secondaryLocale {
+  filter: grayscale(100%);
+}
+
+.selectedLocale {
+  filter: grayscale(0%);
+  border: 1px solid var(--main-color-light);
+}

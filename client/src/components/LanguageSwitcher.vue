@@ -36,22 +36,27 @@ const getAltText = (locale) => {
       return 'Flag'
   }
 }
+const isMobile = ref(window.innerWidth < 976)
+console.log(isMobile.value)
 
 const filteredLocales = computed(() => {
   return availableLocales.value.filter(l => l !== selectedLocale.value)
 })
-// toggleDropdown function
+// dropdown menu for changing the language
 const toggleDropdown = () => {
   dropdownOpen.value = !dropdownOpen.value
   setTimeout(() => {
     dropdownOpen.value = false
   }, 5000)
 }
+window.addEventListener('resize', () => {
+  isMobile.value = window.innerWidth < 976
+})
 
 </script>
 
 <template>
-  <div :class="['dropdown', { open: dropdownOpen }]">
+  <div v-if="!isMobile" :class="['dropdown', { open: dropdownOpen }]" >
     <button class="dropbtn" @click="toggleDropdown">
       <img
         :src="getFlagImage(selectedLocale)"
@@ -77,4 +82,19 @@ const toggleDropdown = () => {
       </a>
     </div>
   </div>
+  <div v-else class="language-switcher-mobile">
+    <button v-for="locale in availableLocales" :key="locale" @click="selectedLocale = locale">
+      <img :class="[selectedLocale === locale ? 'selectedLocale' : 'secondaryLocale']"
+        :src="getFlagImage(locale)"
+        :alt="getAltText(locale)"
+        width="36px"
+        height="24px"
+        loading="lazy"
+      />
+    </button>
+  </div>
 </template>
+
+<style scoped>
+
+</style>

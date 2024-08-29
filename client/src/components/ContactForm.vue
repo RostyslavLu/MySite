@@ -20,7 +20,7 @@ const errors = ref({
   email: '',
   message: ''
 })
-
+// form validation and sending the email
 const onSubmit = (e) => {
   e.preventDefault()
   if (form.value.name === '' || form.value.email === '' || form.value.message === '' || form.value.email.indexOf('@') === -1 || form.value.email.indexOf('.') === -1) {
@@ -80,6 +80,7 @@ const onSubmit = (e) => {
     form.value.message = ''
   }, 2000)
 }
+// shake animation for the button if the form is not filled correctly
 const triggerShake = (e) => {
   e.target.querySelector('.button-send').classList.add('shake')
   setTimeout(() => {
@@ -89,6 +90,7 @@ const triggerShake = (e) => {
 </script>
 
 <template>
+  <!-- contact form -->
   <div class="contact">
     <Transition name="message">
       <div v-if="sent" class="form-message">
@@ -100,27 +102,42 @@ const triggerShake = (e) => {
         <h2>{{ $t('contactForm.subtitle') }}</h2>
         <div class="form-group">
           <div class="input-label">
-            <Label for="name" :label="$t('contactForm.name')" />
-            <InputError :message="errors.name" />
+            <Label for="name"
+              :label="$t('contactForm.name')"
+            />
+            <InputError
+              :message="errors.name"
+            />
           </div>
           <InputText id="name" type="text" v-model="form.name" name="name" autocomplete="name"
-          :placeholder="$t('contactForm.placeholderName')" />
+            :placeholder="$t('contactForm.placeholderName')"
+          />
         </div>
         <div class="form-group">
           <div class="input-label">
-            <Label for="email" :label="$t('contactForm.email')" />
-            <InputError :message="errors.email" />
+            <Label for="email"
+              :label="$t('contactForm.email')"
+            />
+            <InputError
+              :message="errors.email"
+            />
           </div>
           <InputText id="email" type="text" v-model="form.email" name="email" autocomplete="email"
-          :placeholder="$t('contactForm.placeholderEmail')" />
+            :placeholder="$t('contactForm.placeholderEmail')"
+          />
         </div>
         <div class="form-group">
           <div class="input-label">
-            <Label for="message" :label="$t('contactForm.message')" />
-            <InputError :message="errors.message" />
+            <Label for="message"
+              :label="$t('contactForm.message')"
+            />
+            <InputError
+              :message="errors.message"
+            />
           </div>
-          <Textarea id="message" v-model="form.message" name="message" :placeholder="$t('contactForm.placeholderMessage')"
-            rows="8" />
+          <Textarea id="message" v-model="form.message" name="message"
+            :placeholder="$t('contactForm.placeholderMessage')" rows="8"
+          />
         </div>
         <button class="button-send" type="submit">{{ $t('contactForm.submit') }}</button>
       </form>

@@ -8,6 +8,7 @@ body {
 
 body > main {
   padding: 0 350px;
+  position: relative;
 }
 
 h1 {

@@ -7,6 +7,7 @@ const { t } = useI18n()
 </script>
 
 <template>
+  <!-- Experience list component -->
   <div class="experience-container">
     <ExperienceListItem
       :titleExperienceItem = "t('resume.experienceItems[0].title')"

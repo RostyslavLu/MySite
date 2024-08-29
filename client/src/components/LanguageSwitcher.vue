@@ -56,6 +56,8 @@ window.addEventListener('resize', () => {
 </script>
 
 <template>
+  <!-- Language switcher component changes the language of the website -->
+   <!-- desktop version -->
   <div v-if="!isMobile" :class="['dropdown', { open: dropdownOpen }]" >
     <button class="dropbtn" @click="toggleDropdown">
       <img
@@ -82,6 +84,7 @@ window.addEventListener('resize', () => {
       </a>
     </div>
   </div>
+  <!-- mobile version -->
   <div v-else class="language-switcher-mobile">
     <button v-for="locale in availableLocales" :key="locale" @click="selectedLocale = locale">
       <img :class="[selectedLocale === locale ? 'selectedLocale' : 'secondaryLocale']"
@@ -94,7 +97,3 @@ window.addEventListener('resize', () => {
     </button>
   </div>
 </template>
-
-<style scoped>
-
-</style>

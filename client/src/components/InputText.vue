@@ -15,6 +15,7 @@ const input = ref(null)
 </script>
 
 <template>
+  <!-- Input text template -->
   <input
     class=""
     v-model="model"

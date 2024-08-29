@@ -11,6 +11,7 @@ defineProps({
 </script>
 
 <template>
+  <!-- Education -->
   <div class="about-content about-education">
     <h2 class="about-title">{{ titleEducation }}</h2>
     <div class="about-text">

@@ -9,6 +9,7 @@ defineProps({
 </script>
 
 <template>
+  <!-- Input error template -->
   <div v-show="message" class="input-error">
     <p>
       {{ message }}

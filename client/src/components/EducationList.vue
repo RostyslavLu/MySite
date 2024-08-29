@@ -6,6 +6,7 @@ const { t } = useI18n()
 </script>
 
 <template>
+  <!-- Education list component -->
   <div class="education-container">
     <EducationListItem
       :titleEducationItem = "t('resume.educationItems[0].title')"

@@ -14,6 +14,7 @@ defineProps({
 </script>
 
 <template>
+  <!-- Header button template -->
   <button class="header-btn" @click="action">
     {{ titleBtn }}
   </button>

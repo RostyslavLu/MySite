@@ -19,6 +19,7 @@ const downloadCv = () => {
 </script>
 
 <template>
+  <!-- Download CV button component -->
   <div class="download-cv-container">
     <button class="download-cv-button" @click="downloadCv">
       <FontAwesomeIcon :icon="faDownload" />

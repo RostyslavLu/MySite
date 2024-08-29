@@ -18,6 +18,7 @@ defineProps({
 </script>
 
 <template>
+  <!-- Education list item component -->
   <div class="education-item">
     <h3 class="education-title">{{ titleEducationItem }}</h3>
     <p>{{ school }}</p>

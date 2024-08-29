@@ -41,6 +41,7 @@ const DownloadDocument = () => {
 </script>
 
 <template>
+  <!-- Header component -->
   <Transition name="fade" appear>
     <header class="main-header">
       <img src="@/assets/img/photos/img-laptop.jpg" alt="Laptop" loading="lazy"/>

@@ -13,5 +13,6 @@ const name = ref('')
 </script>
 
 <template>
+  <!-- Label template -->
   <label :for="name">{{ label }}</label>
 </template>

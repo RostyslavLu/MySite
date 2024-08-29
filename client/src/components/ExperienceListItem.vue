@@ -18,6 +18,7 @@ defineProps({
 </script>
 
 <template>
+  <!-- Experience list item component -->
   <div class="experience-item">
     <h3 class="experience-title">{{ titleExperienceItem }}&nbsp;|&nbsp;{{ company }}</h3>
     <p>{{ date }}</p>

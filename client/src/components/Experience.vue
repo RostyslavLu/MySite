@@ -11,6 +11,7 @@ defineProps({
 </script>
 
 <template>
+  <!-- Experience component -->
   <div class="about-content about-experience">
     <h2 class="about-title">{{ titleExperience }}</h2>
     <div class="about-text">

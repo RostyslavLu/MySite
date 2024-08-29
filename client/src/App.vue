@@ -10,6 +10,7 @@ const showMenu = ref(false)
 const toggleMenu = () => {
   showMenu.value = !showMenu.value
 }
+
 const closeMenu = () => {
   showMenu.value = false
 }

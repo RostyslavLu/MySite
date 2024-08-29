@@ -90,7 +90,7 @@ const triggerShake = (e) => {
 </script>
 
 <template>
-  <!-- contact form -->
+  <!-- Contact form -->
   <div class="contact">
     <Transition name="message">
       <div v-if="sent" class="form-message">

@@ -1,0 +1,21 @@
+/* Download CV */
+/* component container */
+.download-cv-container {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-lg);
+}
+/*button styles*/
+.download-cv-button {
+    display: flex;
+    align-items: center;
+    padding: var(--space-s) var(--space-lg);
+    background-color: var(--main-color-dark);
+    color: var(--main-color-light);
+    border: none;
+    cursor: pointer;
+}
+/* text position */
+.download-cv-button p {
+    margin-left: var(--space-xs);
+}

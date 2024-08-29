@@ -13,7 +13,7 @@ defineProps({
 const downloadCv = () => {
   const link = document.createElement('a')
   link.href = '@/assets/doc/CV - Rostyslav Luchyshyn.pdf'
-  link.download = 'cv.pdf'
+  link.download = 'CV.pdf'
   link.click()
 }
 </script>
@@ -26,25 +26,3 @@ const downloadCv = () => {
     </button>
   </div>
 </template>
-
-<style scoped>
-.download-cv-container {
-  display: flex;
-  justify-content: center;
-  margin-top: var(--space-lg);
-}
-
-.download-cv-button {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  background-color: var(--main-color-dark);
-  color: var(--main-color-light);
-  border: none;
-  cursor: pointer;
-}
-
-.download-cv-button p {
-  margin-left: var(--space-xs);
-}
-</style>

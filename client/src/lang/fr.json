@@ -89,12 +89,12 @@
         {
           "title": "Projet Vino (Collège Maisonneuve)",
           "description": "Ce projet consistait à améliorer et développer une application web transactionnelle, réalisé en équipe de 3 à 5 membres. L'application, nommée 'Vino', a été conçue pour aider les utilisateurs à gérer leurs celliers de vin. En utilisant les méthodologies de gestion de projet AGILE/SCRUM et Git pour le contrôle de version, le projet a été développé avec une approche mobile-first. Le produit final permettait aux utilisateurs de consulter et de mettre à jour leur inventaire de vin depuis différents appareils (Mac, PC, Android, iOS) et sur les principaux navigateurs. Le projet s'est déroulé en trois phases, se concentrant sur la conception, la restructuration du code, la correction de bugs et l'ajout de fonctionnalités essentielles, chaque membre de l'équipe contribuant au développement front-end et back-end.",
-          "alt": "App Vino"
+          "alt": "Capture d'écran de l'application web du projet Vino montrant les fonctionnalités de gestion de l'inventaire de vin."
         },
         {
           "title": "Mon portfolio",
           "description": "Ce projet est un site web bilingue (anglais et français) développé avec Vue.js 3 pour le front-end et Node.js pour le back-end. Le site met en avant une interface utilisateur fluide et moderne, avec une attention particulière portée à la réactivité et à l'expérience utilisateur. Grâce à l'intégration de Vue Router et i18n, l'utilisateur peut facilement naviguer entre les versions anglaise et française du site. L'architecture backend en Node.js gère efficacement les requêtes, offrant une performance optimisée. Ce projet reflète mes compétences en développement full-stack, en mettant l'accent sur la gestion d'interfaces dynamiques et multilingues.",
-          "alt": "Mon portfolio"
+          "alt": "Capture d'écran de mon site web de portfolio montrant un design moderne et réactif avec un sélecteur de langue"
         }
       ]
     }

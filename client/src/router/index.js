@@ -117,7 +117,6 @@ router.beforeEach((to, from, next) => {
     Object.keys(tagDef).forEach(key => {
       tag.setAttribute(key, tagDef[key])
     })
-    tag.setAttribute('data-vue-router-controlled', '')
     return tag
   }).forEach(tag => document.head.appendChild(tag))
   next()

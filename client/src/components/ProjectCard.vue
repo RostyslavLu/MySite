@@ -56,6 +56,12 @@ defineProps({
     })
   }
 })
+// expand description text
+const isExpanded = ref(false)
+
+const toggleExpanded = () => {
+  isExpanded.value = !isExpanded.value
+}
 </script>
 
 <template>
@@ -66,7 +72,12 @@ defineProps({
     </figure>
     <div class="project-card-info">
       <h2>{{ title }}</h2>
-      <p> {{ description }}</p>
+      <p :class="{'project-card-description': true, 'expanded': isExpanded}">
+        {{ description }}
+      </p>
+      <span class="project-card-read-more" @click="toggleExpanded">
+        {{ isExpanded ? 'Show less...' : 'Read more...' }}
+      </span>
       <div class="project-card-links">
         <a :href="siteUrl" target="_blank" title="app site">
           <FontAwesomeIcon :icon="faGlobe" />

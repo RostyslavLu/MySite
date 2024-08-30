@@ -7,7 +7,7 @@ a {
 img {
     max-width: 100%;
 }
-/* remove scrollbar */
+/* remove scrollbar in chrome etc. */
 body::-webkit-scrollbar {
     display: none;
   }

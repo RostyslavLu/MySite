@@ -95,7 +95,7 @@
       opacity: 0.85;
       width: 50%;
       padding: var(--space-lg);
-      height: 100dvh;
+      min-height: calc(100vh - 100px);
     }
     [id="main-navigation"] .main-navigation-links.show {
       display: flex;

@@ -1,4 +1,4 @@
-body {
+[id="app"] {
   background-color: var(--main-color-dark);
   color: var(--main-color-light);
   min-height: 100dvh;
@@ -6,7 +6,7 @@ body {
   flex-direction: column;
 }
 
-body > main {
+[id="app"] > main {
   padding: 0 350px;
   position: relative;
 }

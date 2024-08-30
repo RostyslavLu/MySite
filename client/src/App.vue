@@ -19,7 +19,7 @@ const closeMenu = () => {
 <template>
 <!-- Navigation -->
   <nav id="main-navigation">
-      <router-link to="/" @click="closeMenu">
+      <router-link to="/" @click="closeMenu" aria-label="Home">
         <AppLogo />
       </router-link>
       <button @click="toggleMenu" aria-label="Menu-button">

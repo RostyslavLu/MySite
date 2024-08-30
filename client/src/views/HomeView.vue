@@ -12,6 +12,7 @@ import HeaderView from '@/components/HeaderView.vue'
 
 <style scoped>
 main {
-  padding: 0 0;
+  /* padding to 0 for header component */
+  padding: 0 0!important;
 }
 </style>

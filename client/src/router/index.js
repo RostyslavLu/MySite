@@ -9,22 +9,90 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: HomeView
+    component: HomeView,
+    meta: {
+      title: 'Home',
+      metaTags: [
+        {
+          name: 'description',
+          content: 'The home page of portfolio website of Rostyslav Luchyshyn'
+        },
+        {
+          name: 'author',
+          content: 'Rostyslav Luchyshyn'
+        },
+        {
+          name: 'keywords',
+          content: 'web developer, web design, web development, web design, HTML, CSS, JavaScript, Vue.js, React.js, Node.js, Express.js'
+        }
+      ]
+    }
   },
   {
     path: '/projects',
     name: 'Projects',
-    component: ProjectsView
+    component: ProjectsView,
+    meta: {
+      title: 'Projects',
+      metaTags: [
+        {
+          name: 'description',
+          content: 'The projects page of portfolio website of Rostyslav Luchyshyn'
+        },
+        {
+          name: 'author',
+          content: 'Rostyslav Luchyshyn'
+        },
+        {
+          name: 'keywords',
+          content: 'web developer, web design, web development, web design, HTML, CSS, JavaScript, Vue.js, React.js, Node.js, Express.js'
+        }
+      ]
+    }
   },
   {
     path: '/resume',
     name: 'About me',
-    component: ResumeView
+    component: ResumeView,
+    meta: {
+      title: 'About me',
+      metaTags: [
+        {
+          name: 'description',
+          content: 'The resume page of portfolio website of Rostyslav Luchyshyn'
+        },
+        {
+          name: 'author',
+          content: 'Rostyslav Luchyshyn'
+        },
+        {
+          name: 'keywords',
+          content: 'web developer, web design, web development, web design, HTML, CSS, JavaScript, Vue.js, React.js, Node.js, Express.js'
+        }
+      ]
+    }
   },
   {
     path: '/contact',
     name: 'Contact',
-    component: ContactView
+    component: ContactView,
+    meta: {
+      title: 'Contact',
+      metaTags: [
+        {
+          name: 'description',
+          content: 'The contact page of portfolio website of Rostyslav Luchyshyn'
+        },
+        {
+          name: 'author',
+          content: 'Rostyslav Luchyshyn'
+        },
+        {
+          name: 'keywords',
+          content: 'web developer, web design, web development, web design, HTML, CSS, JavaScript, Vue.js, React.js, Node.js, Express.js'
+        }
+      ]
+    }
   },
   {
     path: '/:locale',
@@ -39,6 +107,19 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   document.title = `RL: ${to.name}`
+  const nearestWithTitle = to.matched.slice().reverse().find(r => r.meta && r.meta.title)
+  const nearestWithMeta = to.matched.slice().reverse().find(r => r.meta && r.meta.metaTags)
+  if (nearestWithTitle) document.title = nearestWithTitle.meta.title
+  Array.from(document.querySelectorAll('[data-vue-router-controlled]')).map(el => el.parentNode.removeChild(el))
+  if (!nearestWithMeta) return next()
+  nearestWithMeta.meta.metaTags.map(tagDef => {
+    const tag = document.createElement('meta')
+    Object.keys(tagDef).forEach(key => {
+      tag.setAttribute(key, tagDef[key])
+    })
+    tag.setAttribute('data-vue-router-controlled', '')
+    return tag
+  }).forEach(tag => document.head.appendChild(tag))
   next()
 })
 

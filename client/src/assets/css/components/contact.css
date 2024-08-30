@@ -104,7 +104,7 @@
 /* adapt the contact section to smaller screens */
 
 @media screen and (max-width: 1500px) {
-  body > main {
+  [id="app"] > main {
     padding: 0 200px;
   }
   [id="main-navigation"] {
@@ -116,7 +116,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  body > main {
+  [id="app"] > main {
     padding: 0 100px;
   }
   [id="main-navigation"] {
@@ -128,7 +128,7 @@
 }
 
 @media screen and (max-width: 968px) {
-  body > main {
+  [id="app"] > main {
     padding: 0 50px;
   }
   [id="main-navigation"] {

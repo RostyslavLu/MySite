@@ -4,6 +4,7 @@ import { faGithub, faLinkedin, faFacebook, faInstagram } from '@fortawesome/free
 </script>
 
 <template>
+  <!-- link to social media -->
   <div class="contact-social">
     <div class="contact-social-element">
       <a href="https://github.com/RostyslavLu" target="_blank" aria-label="github">

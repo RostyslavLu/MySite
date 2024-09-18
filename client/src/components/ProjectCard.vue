@@ -119,6 +119,7 @@ onBeforeUnmount(() => {
                 height="auto"
                 controls
                 controlslist="nodownload"
+                preload="auto"
                 autoplay
                 >
                 <source

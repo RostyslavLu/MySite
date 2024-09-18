@@ -1,7 +1,8 @@
 <script setup>
 import ProjectCard from './ProjectCard.vue'
 import { useI18n } from 'vue-i18n'
-import videoAppVino from '@/assets/video/app-vino-web.mp4' // import video file for the project App Vino
+import videoAppVino from '@/assets/video/app_vino_web.mp4' // import video file for the project App Vino
+import videoPortfolio from '@/assets/video/portfolio_web.mp4' // import video file for the project Portfolio
 import imageAppVino from '@/assets/img/photos/images-app-vino/img5.jpg' // import image file for the project App Vino
 import imagePortfolio from '@/assets/img/photos/images-portfolio/img1.jpg' // import image file for the project Portfolio
 
@@ -35,7 +36,7 @@ const gitPortfolio = 'https://github.com/RostyslavLu/MySite.git'
       :description="t('projects.projectItems[1].description')"
       :img="imagePortfolio"
       :alt="t('projects.projectItems[1].alt')"
-      :videoFile="videoAppVino"
+      :videoFile="videoPortfolio"
       :tech="{ node: true, js: true, vuejs: true, html5: true, css3: true }"
     />
   </div>

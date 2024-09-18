@@ -6,12 +6,12 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(238, 225, 225, 0.514);
+  max-width: 100dvw;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
+  padding: 0 350px;
 }
 /* Modal content */
 .modal-content {
@@ -50,7 +50,7 @@
 }
 /* close modal button hover effect */
 .modal-close-btn:hover {
-  color: red;
+  color: var(--secondary-color-medium);
 }
 
 /* transition styles */
@@ -62,4 +62,17 @@
 .modal-enter-from,
 .modal-leave-to {
   opacity: 0;
+}
+
+@media screen and (max-width: 1500px) {
+  .modal {
+    padding: 0 200px;
+  }
+  
+}
+@media screen and (max-width: 968px) {
+  .modal {
+    padding: 0;
+  }
+  
 }

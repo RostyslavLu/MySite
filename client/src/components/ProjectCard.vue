@@ -2,10 +2,23 @@
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faGlobe, faVideo, faDatabase } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLaravel, faPhp, faJs, faVuejs, faHtml5, faCss3, faNode, faWordpress, faBootstrap, faFigma, faDebian, faAws } from '@fortawesome/free-brands-svg-icons'
-import { defineProps, ref } from 'vue'
+import { defineProps, onBeforeUnmount, onMounted, ref } from 'vue'
 import Modal from './Modal.vue'
 // modal state
 const openModal = ref(false)
+
+const videoRef = ref(null)
+const handleOrientationChange = () => {
+  if (window.screen.orientation.type.startsWith('landscape')) {
+    if (videoRef.value && videoRef.value.requestFullscreen) {
+      videoRef.value.requestFullscreen()
+    }
+  } else {
+    if (document.fullscreenElement) {
+      document.exitFullscreen()
+    }
+  }
+}
 // define props
 defineProps({
   siteUrl: {
@@ -62,6 +75,12 @@ const isExpanded = ref(false)
 const toggleExpanded = () => {
   isExpanded.value = !isExpanded.value
 }
+onMounted(() => {
+  window.addEventListener('orientationchange', handleOrientationChange)
+})
+onBeforeUnmount(() => {
+  window.removeEventListener('orientationchange', handleOrientationChange)
+})
 </script>
 
 <template>
@@ -95,10 +114,11 @@ const toggleExpanded = () => {
             </template>
             <template #body>
               <video
+                ref="videoRef"
                 width="100%"
                 height="auto"
                 controls
-                controlslist="nodownload nofullscreen noremoteplayback"
+                controlslist="nodownload"
                 autoplay
                 >
                 <source

@@ -23,12 +23,12 @@
       "submit": "Envoyer",
       "messageSuccess": "Merci pour votre message!",
       "placeholderName": "ex. Jean Dupont",
-      "placeholderEmail": "ex. jean@example.com",
+      "placeholderEmail": "adresse courriel",
       "placeholderMessage": "Écrivez votre message ici",
       "requiredName": "Nom est requis",
       "requiredEmail": "Courriel est requis",
       "requiredMessage": "Message est requis",
-      "requiredSymolsEmail": "Courriel doit avoir \"@\" et \".\""
+      "requiredSymolsEmail": "Courriel doit avoir arrobase et point"
     },
     "resume": {
       "profilTitle": "Profil",

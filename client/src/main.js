@@ -4,4 +4,7 @@ import router from './router'
 import '@/assets/css/main.css'
 import { i18n } from './i18n'
 
-createApp(App).use(router).use(i18n).mount('#app')
+const app = createApp(App)
+app.use(router)
+app.use(i18n)
+app.mount('#app')

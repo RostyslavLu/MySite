@@ -22,13 +22,13 @@
       "message": "Your message",
       "submit": "Submit",
       "messageSuccess": "Thank you for your message!",
-      "placeholderName": "ex. John Doe",
-      "placeholderEmail": "email address",
+      "placeholderName": "Your name",
+      "placeholderEmail": "Your email",
       "placeholderMessage": "Write your message here",
       "requiredName": "Name is required",
       "requiredEmail": "Email is required",
       "requiredMessage": "Message is required",
-      "requiredSymolsEmail": "Email must have address sign and dot"
+      "requiredSymolsEmail": "Email must contain sing at and dot"
     },
     "resume": {
       "profilTitle": "Profile",

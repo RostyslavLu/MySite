@@ -7,7 +7,7 @@
       "home": "Accueil",
       "cv": "À propos",
       "projects": "Projets",
-      "photogallery": "Galerie de photos",
+      "gallery": "Galerie de photos",
       "contact": "Contact"
     },
     "languageNames": {
@@ -95,6 +95,21 @@
           "title": "Mon portfolio",
           "description": "Ce projet est un site web bilingue (anglais et français) développé avec Vue.js 3 pour le front-end et Node.js pour le back-end. Le site met en avant une interface utilisateur fluide et moderne, avec une attention particulière portée à la réactivité et à l'expérience utilisateur. Grâce à l'intégration de Vue Router et i18n, l'utilisateur peut facilement naviguer entre les versions anglaise et française du site. L'architecture backend en Node.js gère efficacement les requêtes, offrant une performance optimisée. Ce projet reflète mes compétences en développement full-stack, en mettant l'accent sur la gestion d'interfaces dynamiques et multilingues.",
           "alt": "Capture d'écran de mon site web de portfolio montrant un design moderne et réactif avec un sélecteur de langue"
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Galérie de photos",
+      "galleryItems": [
+        {
+          "title": "Photo 1",
+          "description": "Description de la photo 1",
+          "alt": "Photo 1"
+        },
+        {
+          "title": "Photo 2",
+          "description": "Description de la photo 2",
+          "alt": "Photo 2"
         }
       ]
     }

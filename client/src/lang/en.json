@@ -7,7 +7,7 @@
       "home": "Home",
       "cv": "About",
       "projects": "Projects",
-      "photogallery": "Photo Gallery",
+      "gallery": "Photo Gallery",
       "contact": "Contact"
     },
     "languageNames": {
@@ -95,6 +95,21 @@
           "title": "My portfolio",
           "description": "This project is a bilingual website (English and French) developed using Vue.js 3 for the front-end and Node.js for the back-end. The site features a smooth, modern user interface with a strong focus on responsiveness and user experience. With Vue Router and i18n integration, users can seamlessly switch between the English and French versions. The Node.js backend efficiently handles requests, ensuring optimized performance. This project showcases my full-stack development skills, emphasizing dynamic, multilingual interfaces.",
           "alt": "Screenshot of my portfolio website showing a modern, responsive design with language switcher"
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Photo Gallery",
+      "galleryItems": [
+        {
+          "title": "Photo 1",
+          "description": "Description of photo 1",
+          "alt": "Photo 1"
+        },
+        {
+          "title": "Photo 2",
+          "description": "Description of photo 2",
+          "alt": "Photo 2"
         }
       ]
     }

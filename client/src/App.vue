@@ -27,6 +27,7 @@ const closeMenu = () => {
       </button>
     <div class="main-navigation-links" :class="{ show: showMenu }">
       <router-link to="/projects" @click="closeMenu">{{ $t('navigation.projects') }}</router-link>
+      <router-link to="/gallery" @click="closeMenu">{{ $t('navigation.gallery') }}</router-link>
       <router-link to="/resume" @click="closeMenu">{{ $t('navigation.cv') }}</router-link>
       <router-link to="/contact" @click="closeMenu">{{ $t('navigation.contact') }}</router-link>
       <LanguageSwitcher @click="closeMenu" />
